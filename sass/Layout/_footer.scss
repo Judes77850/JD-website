@@ -1,0 +1,27 @@
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    border-radius: 3px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    
+    #socialBox{
+        font-size: 45px;
+        padding-bottom: 15px;
+        transition: 300ms;
+        a{
+            color: $color-2;
+            transition: 300ms;
+            margin: 18px;
+            :visited{
+                color: $color-2;
+            }
+            :hover{
+                transform: scale(1.15);
+                transition: 300ms;
+            }
+    }
+    }
+}
