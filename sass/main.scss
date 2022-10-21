@@ -15,17 +15,10 @@ body {
     display: flex;
     flex-direction: column;
     background-image: url("../img/background.png");
-    background-repeat: round;
-    justify-content: space-around;
+    background-repeat: unset;
+    justify-content: flex-end;
     color: $color-1;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.acch1{
-    margin: -20px 0px 50px 0px;
-    color: $color-2;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 18px;
 }
 
 main{
@@ -34,8 +27,6 @@ main{
     max-width: 1200px;
 }
 
-
-
 #intro{
     width: 450px;
     background-color: rgba($color: #ffffff, $alpha: 0.3);
@@ -43,6 +34,8 @@ main{
     border-radius: 10px 10px 10px 10px;
     margin: auto;
     margin-top: 40px;
+    display: flex;
+    flex-direction: row-reverse;
     .judes{
         img{
             transition: 150ms;

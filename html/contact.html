@@ -1,16 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire de contact</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("MK-TS7pXp5JJyRB91");
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            this.contact_number.value = (Math.random() * 100000) | 0;
+            emailjs.sendForm("service_duwdtg9", "template_cfu7i59", this).then(
+              function () {
+                console.log("SUCCESS!");
+                alert("Votre demande a bien été transmise");
+                location.reload();
+              },
+              function (error) {
+                console.log("FAILED...", error);
+                alert(
+                  "Quelque chose ne s'est pas passé comme prévu, vous pouvez contacter Julien par email ; julien.desaindes@gmail.com"
+                );
+              }
+            );
+          });
+      };
+    </script>
     <script
       src="https://kit.fontawesome.com/b7690d0649.js"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../sass/reset.scss" />
     <link rel="stylesheet" href="../css/main.min.css" />
-    <title>JD Web-Site</title>
   </head>
   <body>
     <header>
@@ -18,7 +47,7 @@
       <p class="acch1">Developpeur WEB junior</p>
       <ul id="menu">
         <li>
-          <a href="index.html"
+          <a href="../index.html"
             >Accueil <i class="fa-solid fa-house-chimney"></i
           ></a>
         </li>
@@ -37,20 +66,21 @@
         </li>
       </ul>
     </header>
-    <main>
-      <div class="formbox">
-        <input type="text" value="" placeholder="Name" class="name" />
-        <input type="text" value="" placeholder="Company" class="company" />
-        <input
-          type="email"
-          value=""
-          placeholder="Votre adresse email"
-          class="email"
-        />
-        <input type="text" placeholder="Votre message ici" class="message" />
-        <input type="submit" value="Envoyer" class="send" />
-      </div>
-    </main>
+    <form id="contact-form">
+      <input type="hidden" name="contact_number" required />
+      <label>Name</label>
+      <input type="text" name="user_name" placeholder="Dark Vador" required />
+      <label>Email</label>
+      <input
+        type="email"
+        name="user_email"
+        placeholder="xXoOoXx@etoilenoire.fr"
+        required
+      />
+      <label>Message</label>
+      <textarea name="message"></textarea>
+      <input class="send" type="submit" value="Envoyer" />
+    </form>
     <footer>
       <p>Retrouvez-moi sur ces reseaux :</p>
       <div id="socialBox">
