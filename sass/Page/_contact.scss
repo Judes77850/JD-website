@@ -1,0 +1,29 @@
+.formbox{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: auto;
+    margin-top: 150px;
+    input{
+        margin: 20px;
+        border-radius: 10px;
+        height: 25px;
+        text-align: center;
+        border-color: $color-2;
+    }
+    .message{
+        height: 70px;
+    }
+    .send{
+        background-color: $color-2;
+        font-weight: 700;
+        height: 30px;
+        width: 150px;
+        margin: auto;
+        margin-bottom: 30px;
+        margin-top: 40px;
+        cursor: pointer;
+    }
+}
