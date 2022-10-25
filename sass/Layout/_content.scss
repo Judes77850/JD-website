@@ -1,35 +1,44 @@
 .content{
-    margin: 20px;
+    margin: 10px;
     h2{
         text-align: left;
         text-decoration: underline;
-        font-size: 30px;
+        font-size: 3.2vh;
         font-family: 'Courier New', Courier, monospace;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 }
 
 .lastProdBox {
+    background-color: black;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
     justify-content: space-around;
-    margin: 50px;
+    margin: 0px;
+    padding: 0px;
     margin-bottom:100px ;
     .lastprod {
         background-color: white;
-        box-shadow: rgb(198, 198, 198) 3px 3px 30px;
+        box-shadow: rgb(26, 26, 26) 2px 2px 5px;
+        border: solid 2px $color-2;
         border-radius: 10px;
-        width: 250px;
-        height: 500px;
-        transition-duration: 600ms;
+        width: 32%;
+        min-width: 300px;
+        height: auto;
+        min-height: 450px;
+        transition-duration: 100ms;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        margin: 15px;
+        margin: 0px;
+        padding-bottom: 15px;
         &:hover{
-            box-shadow: rgb(156, 156, 156) 3px 3px 30px;
-            transform: scale(1.02);
-            transition-duration: 300ms;
+            animation: content 400ms;
+            border-color: $color-4;
+            transform: scale(1.01);
         }
         .logobox{
             width: 90%;
@@ -39,14 +48,19 @@
             }
         }
         .textpart{
-            color: rgb(58, 58, 58);
-            background-color: rgb(228, 228, 228);;
-            border-radius: 10px 10px 0px 0px;
+            color: $color-3;
+            background-image: url(/img/black-background.webp);
+            border-radius: 8px 8px 0px 0px;
+            font-family: 'Courier New', Courier, monospace;
+            h4{
+                color: $color-2;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 3vh;
+                }    
         }
         .showon{
             font-size: 20px;
             height: 30px;
-            
             a{
                 text-decoration: none;
                 color: rgb(61, 61, 61);
@@ -56,9 +70,45 @@
                 }
             }
             :hover{
-                color: $color-2;
+                color: $color-4;
                 transition: 300ms;
             }
         }
     } 
+}
+
+@keyframes content {
+    0%{
+        border-color: $color-5;
+    }5%{
+        border-color: $color-4;
+    }6%{
+        border-color: $color-5;
+    }7%{
+        border-color: $color-4;
+    }14%{
+        border-color: $color-5;
+    }15%{
+        border-color: $color-4;
+    }19%{
+        border-color: $color-5;
+    }20%{
+        border-color: $color-4;
+    }21%{
+        border-color: $color-5;
+        text-shadow: none;
+    }59%{
+        border-color: $color-5;
+        text-shadow: none;
+    }60%{
+        border-color: $color-4;
+    }61%{
+        border-color: $color-4;
+    }97%{
+        border-color: $color-5;
+        text-shadow: none;
+    }100%{
+        border-color: $color-4;
+    }
+    
 }
