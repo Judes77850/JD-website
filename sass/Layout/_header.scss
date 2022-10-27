@@ -1,4 +1,7 @@
 header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     width: 100%;
     position: initial;
@@ -40,9 +43,51 @@ header{
         }
     }
     
+    #phantomMenu {
+        opacity: 0;
+        background-color: rgba($color: #000000, $alpha: 0.95);
+        display: flex;
+        width: 95%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-right: solid 3px $color-2;
+        border-left: solid 3px $color-3;
+        border-top: solid 3px $color-3;
+        border-bottom: solid 3px $color-2;
+        border-radius: 5px;
+        list-style-type: none;
+        justify-content: space-between;
+        font-weight: 700;
+        font-size: 2.2vh;
+        padding: 2px;
+        transition-duration: 300ms;
+        li {
+            width: 20%;
+            padding: 7px;
+            text-align: center;
+            margin: auto;
+            transition-duration: 300ms;
+            a{
+                font-family: 'Courier New', Courier, monospace;
+                text-decoration: none;
+                color: $color-1;
+                width: 100%;
+                height: 100%;
+                transition: 300ms;
+                &:hover{
+                    color: $color-4;
+                    text-shadow: 1px 1px 3px grey;
+                    animation: menu 500ms;
+                    animation-iteration-count: 1;
+                }
+            }
+        }
+    }
+
     #menu {
         background-color: rgba($color: #000000, $alpha: 0.3);
         display: flex;
+        width: 95%;
         max-width: 1200px;
         flex-direction: row;
         border-right: solid 3px $color-2;
@@ -245,6 +290,47 @@ header{
             }
         }
         
+        #phantomMenu {
+            opacity: 0;
+            background-color: rgba($color: #000000, $alpha: 0.95);
+            display: flex;
+            width: 98%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border-right: solid 3px $color-2;
+            border-left: solid 3px $color-3;
+            border-top: solid 3px $color-3;
+            border-bottom: solid 3px $color-2;
+            border-radius: 5px;
+            list-style-type: none;
+            justify-content: space-between;
+            font-weight: 700;
+            font-size: 1.5vh;
+            padding: 2px;
+
+            li {
+                width: 20%;
+                padding: 7px;
+                text-align: center;
+                margin: auto;
+                transition-duration: 300ms;
+                a{
+                    font-family: 'Courier New', Courier, monospace;
+                    text-decoration: none;
+                    color: $color-1;
+                    width: 100%;
+                    height: 100%;
+                    transition: 300ms;
+                    &:hover{
+                        color: $color-4;
+                        text-shadow: 1px 1px 3px grey;
+                        animation: menu 500ms;
+                        animation-iteration-count: 1;
+                    }
+                }
+            }
+        }
+
         #menu {
             background-color: rgba($color: #000000, $alpha: 0.3);
             display: flex;
@@ -259,7 +345,7 @@ header{
             list-style-type: none;
             justify-content: space-between;
             font-weight: 700;
-            font-size: 1.7vh;
+            font-size: 2.2vh;
             padding: 10px;
             margin: auto;
             margin-bottom: 0px;
