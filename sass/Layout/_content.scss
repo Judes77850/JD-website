@@ -1,6 +1,7 @@
-.content{
+.content {
     margin: 10px;
-    h2{
+
+    h2 {
         text-align: left;
         text-decoration: underline;
         font-size: 2.2vh;
@@ -18,7 +19,8 @@
     justify-content: space-around;
     margin: 0px;
     padding: 0px;
-    margin-bottom:100px ;
+    margin-bottom: 100px;
+
     .lastprod {
         box-shadow: rgb(26, 26, 26) 2px 2px 5px;
         background-color: rgba($color: #000000, $alpha: 0.3);
@@ -30,107 +32,143 @@
         min-height: 450px;
         transition-duration: 100ms;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: flex-start;
         margin: 0px;
         padding-bottom: 15px;
-        &:hover{
+
+        &:hover {
             animation: content 400ms;
             border-color: $color-4;
             box-shadow: rgb(170, 170, 170) 1px 1px 15px;
             transform: scale(1.01);
         }
-        .logobox{
+
+        .logobox {
             background-color: $color-3;
-            width: 90%;
+            width: 100%;
             height: 80%;
             margin: auto;
-            padding: 10px;
-            border-radius: 10px;
+            padding: 0px;
+            border-radius: 8px;
             display: flex;
             justify-content: center;
             align-items: center;
-            img{
-                width: 100%;
+
+            img {
+                width: 70%;
                 height: auto;
             }
         }
-        .textpart{
+
+        .textpart {
             color: $color-3;
             font-weight: 600;
             background-color: transparent;
             border-radius: 8px 8px 0px 0px;
             font-family: 'Courier New', Courier, monospace;
-            h4{
+
+            h4 {
                 color: $color-2;
                 font-family: 'Courier New', Courier, monospace;
                 font-size: 2.2vh;
                 margin: 8px;
-                }    
+            }
         }
-        .showon{
+
+        .showon {
             font-size: 20px;
             height: 30px;
-            a{
+
+            a {
                 text-decoration: none;
                 color: rgb(61, 61, 61);
                 transition: 300ms;
-                :visited{
+
+                :visited {
                     color: rgb(61, 61, 61);
                 }
             }
-            :hover{
+
+            :hover {
                 color: $color-4;
                 transition: 300ms;
             }
         }
-    } 
+    }
 }
 
 @keyframes content {
-    0%{
+    0% {
         border-color: $color-5;
         box-shadow: none;
-    }5%{
-        border-color: $color-4;
-    }6%{
-        border-color: $color-5;
-        box-shadow: none;
-    }7%{
-        border-color: $color-4;
-    }14%{
-        border-color: $color-5;
-        box-shadow: none;
-    }15%{
-        border-color: $color-4;
-    }19%{
-        border-color: $color-5;
-        box-shadow: none;
-    }20%{
-        border-color: $color-4;
-    }21%{
-        border-color: $color-5;
-        box-shadow: none;
-    }59%{
-        border-color: $color-5;
-        box-shadow: none;
-    }60%{
-        border-color: $color-4;
-    }61%{
-        border-color: $color-4;
-    }97%{
-        border-color: $color-5;
-        box-shadow: none;
-    }100%{
+    }
+
+    5% {
         border-color: $color-4;
     }
-    
+
+    6% {
+        border-color: $color-5;
+        box-shadow: none;
+    }
+
+    7% {
+        border-color: $color-4;
+    }
+
+    14% {
+        border-color: $color-5;
+        box-shadow: none;
+    }
+
+    15% {
+        border-color: $color-4;
+    }
+
+    19% {
+        border-color: $color-5;
+        box-shadow: none;
+    }
+
+    20% {
+        border-color: $color-4;
+    }
+
+    21% {
+        border-color: $color-5;
+        box-shadow: none;
+    }
+
+    59% {
+        border-color: $color-5;
+        box-shadow: none;
+    }
+
+    60% {
+        border-color: $color-4;
+    }
+
+    61% {
+        border-color: $color-4;
+    }
+
+    97% {
+        border-color: $color-5;
+        box-shadow: none;
+    }
+
+    100% {
+        border-color: $color-4;
+    }
+
 }
 
-@media only screen and (max-width: 800px){
-    .content{
+@media only screen and (max-width: 800px) {
+    .content {
         margin: 10px;
-        h2{
+
+        h2 {
             text-align: left;
             text-decoration: underline;
             font-size: 2.2vh;
@@ -139,7 +177,7 @@
             margin-bottom: 40px;
         }
     }
-    
+
     .lastProdBox {
         display: flex;
         flex-direction: column;
@@ -149,113 +187,151 @@
         align-items: center;
         margin: 0px;
         padding: 0px;
-        margin-bottom:100px ;
+        margin-bottom: 100px;
+
         .lastprod {
             box-shadow: rgb(26, 26, 26) 2px 2px 5px;
             background-color: rgba($color: #000000, $alpha: 0.3);
             border: solid 2px $color-1;
-            border-radius: 10px;
-            width: 95%;
+            border-radius: 2px;
+            width: 100%;
             min-width: 300px;
-            height: 600px;
+            height: 400px;
             transition-duration: 100ms;
             display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+            flex-direction: column-reverse;
+            justify-content: flex-end;
             margin: 0px;
             margin-bottom: 20px;
-            padding-bottom: 10px;
-            &:hover{
+            padding: 0px;
+
+            &:hover {
                 animation: content 400ms;
                 border-color: $color-4;
                 box-shadow: rgb(170, 170, 170) 1px 1px 15px;
                 transform: scale(1.01);
             }
-            .logobox{
+
+            .logobox {
                 background-color: $color-3;
-                width: 90%;
-                height: 80%;
-                margin: auto;
-                padding: 10px;
-                border-radius: 10px;
+                width: 100%;
+                height: 70%;
+                margin: 0;
+                margin-bottom: 0px;
+                padding: 0px;
+                border-radius: 0px 0px 1px 1px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                img{
-                    width: 80%;
+
+                img {
+                    width: 50%;
+                    max-width: 200px;
                     height: auto;
                 }
             }
-            .textpart{
+
+            .textpart {
                 color: $color-3;
                 font-weight: 600;
                 padding: 10px;
                 background-color: transparent;
                 border-radius: 8px 8px 0px 0px;
                 font-family: 'Courier New', Courier, monospace;
-                h4{
+
+                h4 {
                     color: $color-2;
                     font-family: 'Courier New', Courier, monospace;
                     font-size: 2.2vh;
                     margin: 8px;
-                    }    
+                }
             }
-            .showon{
+
+            .showon {
                 font-size: 20px;
                 height: 30px;
-                a{
+
+                a {
                     text-decoration: none;
                     color: rgb(61, 61, 61);
                     transition: 300ms;
-                    :visited{
+
+                    :visited {
                         color: rgb(61, 61, 61);
                     }
                 }
-                :hover{
+
+                :hover {
                     color: $color-4;
                     transition: 300ms;
                 }
             }
-        } 
+        }
     }
-    
+
     @keyframes content {
-        0%{
+        0% {
             border-color: $color-5;
             box-shadow: none;
-        }5%{
-            border-color: $color-4;
-        }6%{
-            border-color: $color-5;
-            box-shadow: none;
-        }7%{
-            border-color: $color-4;
-        }14%{
-            border-color: $color-5;
-            box-shadow: none;
-        }15%{
-            border-color: $color-4;
-        }19%{
-            border-color: $color-5;
-            box-shadow: none;
-        }20%{
-            border-color: $color-4;
-        }21%{
-            border-color: $color-5;
-            box-shadow: none;
-        }59%{
-            border-color: $color-5;
-            box-shadow: none;
-        }60%{
-            border-color: $color-4;
-        }61%{
-            border-color: $color-4;
-        }97%{
-            border-color: $color-5;
-            box-shadow: none;
-        }100%{
+        }
+
+        5% {
             border-color: $color-4;
         }
-        
+
+        6% {
+            border-color: $color-5;
+            box-shadow: none;
+        }
+
+        7% {
+            border-color: $color-4;
+        }
+
+        14% {
+            border-color: $color-5;
+            box-shadow: none;
+        }
+
+        15% {
+            border-color: $color-4;
+        }
+
+        19% {
+            border-color: $color-5;
+            box-shadow: none;
+        }
+
+        20% {
+            border-color: $color-4;
+        }
+
+        21% {
+            border-color: $color-5;
+            box-shadow: none;
+        }
+
+        59% {
+            border-color: $color-5;
+            box-shadow: none;
+        }
+
+        60% {
+            border-color: $color-4;
+        }
+
+        61% {
+            border-color: $color-4;
+        }
+
+        97% {
+            border-color: $color-5;
+            box-shadow: none;
+        }
+
+        100% {
+            border-color: $color-4;
+        }
+
     }
 }
