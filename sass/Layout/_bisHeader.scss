@@ -1,0 +1,67 @@
+@import "../Utils/variables";
+
+#menuBar{
+    width: 100%;
+    max-width: 1200px;
+}
+
+#neonlogobox{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    #btn{
+        background-color: transparent;
+        color: $color-2;
+        border: none;
+        font-size: 30px;
+        margin-right: 50px;
+    }
+}
+
+#bisMenu {
+    width: 95%;
+    max-width: 1200px;
+    height: 0px;
+    visibility: hidden;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    border-right: solid 3px $color-2;
+    border-left: solid 3px $color-3;
+    border-top: solid 3px $color-3;
+    border-bottom: solid 3px $color-2;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0;
+    margin: auto;
+    margin-bottom: 0px;
+    z-index: 1;
+    ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    }
+    li {
+        list-style-type: none;
+        a {
+            font-family: 'Courier New', Courier, monospace;
+            text-decoration: none;
+            color: $color-1;
+            width: 100%;
+            height: 100%;
+            &:hover {
+                color: $color-4;
+                text-shadow: 1px 1px 3px grey;
+                animation: menu 500ms;
+                animation-iteration-count: 1;
+            }
+        }
+    }
+    #close{
+        background-color: transparent;
+        color: $color-2;
+        border: none;
+        font-size: 25px;
+    }
+}
