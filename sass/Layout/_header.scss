@@ -343,7 +343,7 @@ header {
             border: solid 3px $color-2;
             border-radius: 10px;
             box-shadow: 2px 2px 10px grey;
-            padding: 10px;
+            padding: 20px;
             width: 50%;
             max-width: 800px;
             margin: auto;
@@ -358,7 +358,7 @@ header {
                 color: $color-3;
                 text-shadow: 1px 1px 10px grey;
                 font-family: roboting;
-                font-size: 2.5rem;
+                font-size: 3rem;
                 animation: h1 1500ms;
                 animation-iteration-count: 2;
             }
@@ -368,7 +368,7 @@ header {
                 color: $color-2;
                 font-family: 'Courier New', Courier, monospace;
                 text-shadow: 2px 2px 10px grey;
-                font-size: 1rem;
+                font-size: 1.3rem;
                 animation: acch1 1500ms;
                 animation-iteration-count: 2;
                 animation-delay: 233ms;
@@ -407,49 +407,6 @@ header {
                     width: 100%;
                     height: 100%;
                     transition: 0ms;
-
-                    &:hover {
-                        color: $color-4;
-                        text-shadow: 1px 1px 3px grey;
-                        animation: menu 500ms;
-                        animation-iteration-count: 1;
-                    }
-                }
-            }
-        }
-
-        #menu {
-            background-color: rgba($color: #000000, $alpha: 0.3);
-            display: flex;
-            width: 92%;
-            flex-direction: row;
-            flex-wrap: wrap;
-            border-right: solid 3px $color-2;
-            border-left: solid 3px $color-3;
-            border-top: solid 3px $color-3;
-            border-bottom: solid 3px $color-2;
-            border-radius: 5px;
-            list-style-type: none;
-            justify-content: space-between;
-            font-weight: 700;
-            font-size: 2.2vh;
-            padding: 10px;
-            margin: auto;
-            margin-bottom: 0px;
-
-            li {
-                width: 45%;
-                padding: 7px;
-                text-align: center;
-                transition-duration: 300ms;
-
-                a {
-                    font-family: 'Courier New', Courier, monospace;
-                    text-decoration: none;
-                    color: $color-1;
-                    width: 100%;
-                    height: 100%;
-                    transition: 300ms;
 
                     &:hover {
                         color: $color-4;

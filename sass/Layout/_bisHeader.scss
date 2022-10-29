@@ -5,13 +5,28 @@
     max-width: 1200px;
     margin: auto;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    .menuneonlogo{
+        width: 50%;
+        max-width: 300px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        a{
+            color: $color-2;
+        }
+    }
     #btn{
         background-color: transparent;
         color: $color-2;
         border: none;
-        font-size: 30px;
-        margin-right: 50px;
+        font-size: 2rem;
+    }
+    .menulogo{
+        color: $color-2;
+        font-size: 2rem;
     }
 }
 
@@ -20,7 +35,7 @@
     max-width: 1200px;
     height: 0px;
     visibility: hidden;
-    background-color: rgba($color: #000000, $alpha: 0.8);
+    background-color: rgba($color: #000000, $alpha: 0.3);
     border-right: solid 3px $color-2;
     border-left: solid 3px $color-3;
     border-top: solid 3px $color-3;
@@ -28,21 +43,25 @@
     border-radius: 5px;
     font-weight: 700;
     font-size: 0;
-    margin-top: -35px;
-    margin-right: 0px;
-    margin-bottom: 0px;
     z-index: 1;
+    transition-duration: 0ms;
     ul{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
     }
     li {
         list-style-type: none;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
         a {
             font-family: 'Courier New', Courier, monospace;
             text-decoration: none;
+            margin: auto;
             color: $color-1;
             width: 100%;
             height: 100%;
@@ -53,6 +72,11 @@
                 animation-iteration-count: 1;
             }
         }
+    }
+    i{
+        font-size: 2.4rem;
+        margin: 15px;
+        color: $color-2;
     }
     #close{
         background-color: transparent;
