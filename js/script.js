@@ -22,7 +22,9 @@ document.getElementById("btn").addEventListener("click", function () {
   nav.style.visibility = "visible";
   nav.style.height = "auto";
   nav.style.marginBottom = "30px";
+  nav.style.marginTop = "20px";
   nav.style.fontSize = "2.5vh";
+  nav.style.width = "90%";
 });
 
 // // document.getElementById("btn").addEventListener("click", function () {
@@ -35,6 +37,7 @@ document.getElementById("close").addEventListener("click", function () {
   nav.style.visibility = "hidden";
   nav.style.height = "0px";
   nav.style.marginBottom = "0px";
+  nav.style.marginTop = "-35px";
 });
 
 // function showMenu(showMenu) {

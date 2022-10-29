@@ -1,14 +1,9 @@
 @import "../Utils/variables";
 
-#menuBar{
-    width: 100%;
-    max-width: 1200px;
-}
-
 #neonlogobox{
-    width: 100%;
+    width: 95%;
     max-width: 1200px;
-    margin: 0px 0px 0px 0px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     #btn{
@@ -21,7 +16,7 @@
 }
 
 #bisMenu {
-    width: 95%;
+    width: 0px;
     max-width: 1200px;
     height: 0px;
     visibility: hidden;
@@ -33,12 +28,13 @@
     border-radius: 5px;
     font-weight: 700;
     font-size: 0;
-    margin: auto;
+    margin-top: -35px;
+    margin-right: 0px;
     margin-bottom: 0px;
     z-index: 1;
     ul{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     }
