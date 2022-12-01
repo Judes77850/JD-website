@@ -1,0 +1,1739 @@
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+ ========================================================================== */
+/**
+* Remove the margin in all browsers.
+*/
+body {
+  margin: 0;
+}
+
+/**
+* Render the `main` element consistently in IE.
+*/
+main {
+  display: block;
+}
+
+/**
+* Correct the font size and margin on `h1` elements within `section` and
+* `article` contexts in Chrome, Firefox, and Safari.
+*/
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+ ========================================================================== */
+/**
+* 1. Add the correct box sizing in Firefox.
+* 2. Show the overflow in Edge and IE.
+*/
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+* 1. Correct the inheritance and scaling of font size in all browsers.
+* 2. Correct the odd `em` font sizing in all browsers.
+*/
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+ ========================================================================== */
+/**
+* Remove the gray background on active links in IE 10.
+*/
+a {
+  background-color: transparent;
+}
+
+/**
+* 1. Remove the bottom border in Chrome 57-
+* 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+*/
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+* Add the correct font weight in Chrome, Edge, and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+* 1. Correct the inheritance and scaling of font size in all browsers.
+* 2. Correct the odd `em` font sizing in all browsers.
+*/
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+* Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+* Prevent `sub` and `sup` elements from affecting the line height in
+* all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+ ========================================================================== */
+/**
+* Remove the border on images inside links in IE 10.
+*/
+img {
+  border-style: none;
+}
+
+/* Forms
+ ========================================================================== */
+/**
+* 1. Change the font styles in all browsers.
+* 2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+* Show the overflow in IE.
+* 1. Show the overflow in Edge.
+*/
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+* Remove the inheritance of text transform in Edge, Firefox, and IE.
+* 1. Remove the inheritance of text transform in Firefox.
+*/
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+* Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+* Remove the inner border and padding in Firefox.
+*/
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+* Restore the focus styles unset by the previous rule.
+*/
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+* Correct the padding in Firefox.
+*/
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+* 1. Correct the text wrapping in Edge and IE.
+* 2. Correct the color inheritance from `fieldset` elements in IE.
+* 3. Remove the padding so developers are not caught out when they zero out
+*    `fieldset` elements in all browsers.
+*/
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+* Add the correct vertical alignment in Chrome, Firefox, and Opera.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+* Remove the default vertical scrollbar in IE 10+.
+*/
+textarea {
+  overflow: auto;
+}
+
+/**
+* 1. Add the correct box sizing in IE 10.
+* 2. Remove the padding in IE 10.
+*/
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+* Correct the cursor style of increment and decrement buttons in Chrome.
+*/
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+* 1. Correct the odd appearance in Chrome and Safari.
+* 2. Correct the outline style in Safari.
+*/
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+* Remove the inner padding in Chrome and Safari on macOS.
+*/
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+* 1. Correct the inability to style clickable types in iOS and Safari.
+* 2. Change font properties to `inherit` in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+ ========================================================================== */
+/*
+* Add the correct display in Edge, IE 10+, and Firefox.
+*/
+details {
+  display: block;
+}
+
+/*
+* Add the correct display in all browsers.
+*/
+summary {
+  display: list-item;
+}
+
+/* Misc
+ ========================================================================== */
+/**
+* Add the correct display in IE 10+.
+*/
+template {
+  display: none;
+}
+
+/**
+* Add the correct display in IE 10.
+*/
+[hidden] {
+  display: none;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  position: initial;
+  top: 0;
+  left: 0;
+}
+header .neonlogo {
+  border: solid 3px rgb(0, 163, 220);
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px grey;
+  padding: 0px;
+  width: 60%;
+  max-height: 100px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+header .neonlogo h1 {
+  width: 80%;
+  padding-top: 10px;
+  margin: auto;
+  margin-top: 0px;
+  color: rgb(225, 185, 75);
+  text-shadow: 1px 1px 10px grey;
+  font-family: roboting;
+  font-size: 2rem;
+  -webkit-animation: h1 1500ms;
+          animation: h1 1500ms;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+}
+header .neonlogo .acch1 {
+  margin: auto;
+  color: rgb(0, 163, 220);
+  font-family: "Courier New", Courier, monospace;
+  text-shadow: 2px 2px 10px grey;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  -webkit-animation: acch1 1500ms;
+          animation: acch1 1500ms;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+  -webkit-animation-delay: 233ms;
+          animation-delay: 233ms;
+}
+
+@-webkit-keyframes h1 {
+  0% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  5% {
+    color: rgb(225, 185, 75);
+  }
+  6% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  7% {
+    color: rgb(225, 185, 75);
+  }
+  14% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  15% {
+    color: rgb(225, 185, 75);
+  }
+  19% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  20% {
+    color: rgb(225, 185, 75);
+  }
+  21% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  59% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  60% {
+    color: rgb(225, 185, 75);
+  }
+  61% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  97% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  100% {
+    color: rgb(225, 185, 75);
+  }
+}
+
+@keyframes h1 {
+  0% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  5% {
+    color: rgb(225, 185, 75);
+  }
+  6% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  7% {
+    color: rgb(225, 185, 75);
+  }
+  14% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  15% {
+    color: rgb(225, 185, 75);
+  }
+  19% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  20% {
+    color: rgb(225, 185, 75);
+  }
+  21% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  59% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  60% {
+    color: rgb(225, 185, 75);
+  }
+  61% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  97% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  100% {
+    color: rgb(225, 185, 75);
+  }
+}
+@-webkit-keyframes acch1 {
+  0% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  5% {
+    color: rgb(0, 163, 220);
+  }
+  6% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  7% {
+    color: rgb(0, 163, 220);
+  }
+  14% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  15% {
+    color: rgb(0, 163, 220);
+  }
+  19% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  20% {
+    color: rgb(0, 163, 220);
+  }
+  21% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  59% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  60% {
+    color: rgb(0, 163, 220);
+  }
+  61% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  97% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  100% {
+    color: rgb(0, 163, 220);
+  }
+}
+@keyframes acch1 {
+  0% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  5% {
+    color: rgb(0, 163, 220);
+  }
+  6% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  7% {
+    color: rgb(0, 163, 220);
+  }
+  14% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  15% {
+    color: rgb(0, 163, 220);
+  }
+  19% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  20% {
+    color: rgb(0, 163, 220);
+  }
+  21% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  59% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  60% {
+    color: rgb(0, 163, 220);
+  }
+  61% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  97% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  100% {
+    color: rgb(0, 163, 220);
+  }
+}
+@-webkit-keyframes menu {
+  0% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  5% {
+    color: rgb(250, 5, 229);
+  }
+  6% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  7% {
+    color: rgb(250, 5, 229);
+  }
+  14% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  15% {
+    color: rgb(250, 5, 229);
+  }
+  19% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  20% {
+    color: rgb(250, 5, 229);
+  }
+  21% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  59% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  60% {
+    color: rgb(250, 5, 229);
+  }
+  61% {
+    color: rgb(250, 5, 229);
+  }
+  97% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  100% {
+    color: rgb(250, 5, 229);
+  }
+}
+@keyframes menu {
+  0% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  5% {
+    color: rgb(250, 5, 229);
+  }
+  6% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  7% {
+    color: rgb(250, 5, 229);
+  }
+  14% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  15% {
+    color: rgb(250, 5, 229);
+  }
+  19% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  20% {
+    color: rgb(250, 5, 229);
+  }
+  21% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  59% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  60% {
+    color: rgb(250, 5, 229);
+  }
+  61% {
+    color: rgb(250, 5, 229);
+  }
+  97% {
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+  }
+  100% {
+    color: rgb(250, 5, 229);
+  }
+}
+@media only screen and (max-width: 800px) {
+  header {
+    text-align: center;
+    width: 100%;
+    position: initial;
+    top: 0;
+    left: 0;
+  }
+  header .neonlogo {
+    border: solid 3px rgb(0, 163, 220);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px grey;
+    padding: 10px;
+    width: 90%;
+    height: 70px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  header .neonlogo h1 {
+    width: auto;
+    padding-top: 5px;
+    margin: auto;
+    margin-top: 0px;
+    color: rgb(225, 185, 75);
+    text-shadow: 1px 1px 10px grey;
+    font-family: roboting;
+    font-size: 2.2rem;
+    -webkit-animation: h1 1500ms;
+            animation: h1 1500ms;
+    -webkit-animation-iteration-count: 2;
+            animation-iteration-count: 2;
+  }
+  header .neonlogo .acch1 {
+    margin: auto;
+    color: rgb(0, 163, 220);
+    font-family: "Courier New", Courier, monospace;
+    text-shadow: 2px 2px 10px grey;
+    font-size: 1rem;
+    -webkit-animation: acch1 1500ms;
+            animation: acch1 1500ms;
+    -webkit-animation-iteration-count: 2;
+            animation-iteration-count: 2;
+    -webkit-animation-delay: 233ms;
+            animation-delay: 233ms;
+  }
+  header #bisMenu {
+    width: 0px;
+    max-width: 1200px;
+    height: 0px;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-right: solid 3px rgb(0, 163, 220);
+    border-left: solid 3px rgb(225, 185, 75);
+    border-top: solid 3px rgb(225, 185, 75);
+    border-bottom: solid 3px rgb(0, 163, 220);
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0;
+    z-index: 1;
+    transition-duration: 0ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header #bisMenu ul {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0px;
+  }
+  header #bisMenu li {
+    list-style-type: none;
+    margin: auto;
+    width: 45%;
+    text-align: center;
+    padding: 5px;
+    margin: 0px 0px 0px 0px;
+  }
+  header #bisMenu li a {
+    font-family: "Courier New", Courier, monospace;
+    text-decoration: none;
+    margin: auto;
+    color: rgb(88, 88, 88);
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+  }
+  header #bisMenu li a:hover {
+    color: rgb(250, 5, 229);
+    text-shadow: 1px 1px 3px grey;
+    -webkit-animation: menu 500ms;
+            animation: menu 500ms;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  header #bisMenu i {
+    font-size: 2.4rem;
+    color: rgb(0, 163, 220);
+    -webkit-animation: menu 500ms;
+            animation: menu 500ms;
+  }
+  header #bisMenu #close {
+    background-color: transparent;
+    color: rgb(0, 163, 220);
+    border: none;
+    font-size: 23px;
+    margin: auto;
+  }
+}
+#neonlogobox {
+  width: 95%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#neonlogobox #menuneonlogo {
+  width: 80%;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+#neonlogobox #menuneonlogo a {
+  color: rgb(0, 163, 220);
+}
+#neonlogobox #menuneonlogo a :hover {
+  -webkit-animation: menu 500ms;
+          animation: menu 500ms;
+  color: rgb(250, 5, 229);
+}
+#neonlogobox #btn {
+  background-color: transparent;
+  color: rgb(0, 163, 220);
+  border: none;
+  font-size: 2rem;
+}
+#neonlogobox .menulogo {
+  color: rgb(0, 163, 220);
+  font-size: 2rem;
+}
+
+#bisMenu {
+  width: 0px;
+  max-width: 1200px;
+  height: 0px;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-right: solid 3px rgb(0, 163, 220);
+  border-left: solid 3px rgb(225, 185, 75);
+  border-top: solid 3px rgb(225, 185, 75);
+  border-bottom: solid 3px rgb(0, 163, 220);
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 0;
+  z-index: 1;
+  transition-duration: 0ms;
+}
+#bisMenu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  text-align: center;
+}
+#bisMenu li {
+  list-style-type: none;
+  margin: auto;
+  padding: 0px 0px 0px 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+#bisMenu li a {
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+  margin: auto;
+  color: rgb(88, 88, 88);
+  width: 100%;
+  height: 100%;
+}
+#bisMenu li a:hover {
+  color: rgb(250, 5, 229);
+  text-shadow: 1px 1px 3px grey;
+  -webkit-animation: menu 500ms;
+          animation: menu 500ms;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+#bisMenu i {
+  font-size: 2.4rem;
+  margin: 15px;
+  color: rgb(0, 163, 220);
+  -webkit-animation: menu 500ms;
+          animation: menu 500ms;
+}
+#bisMenu #close {
+  background-color: transparent;
+  color: rgb(0, 163, 220);
+  border: none;
+  font-size: 23px;
+  margin: 0px;
+}
+
+@-webkit-keyframes bisMenuOpen {
+  0% {
+    margin-top: 0px;
+    width: 0%;
+    font-size: 0px;
+  }
+  50% {
+    margin-top: 10px;
+  }
+  95% {
+    width: 95%;
+  }
+  100% {
+    margin-top: 20px;
+    width: 90%;
+  }
+}
+
+@keyframes bisMenuOpen {
+  0% {
+    margin-top: 0px;
+    width: 0%;
+    font-size: 0px;
+  }
+  50% {
+    margin-top: 10px;
+  }
+  95% {
+    width: 95%;
+  }
+  100% {
+    margin-top: 20px;
+    width: 90%;
+  }
+}
+@-webkit-keyframes bisMenuClose {
+  0% {
+    margin-top: 20px;
+    width: 90%;
+    visibility: visible;
+    height: auto;
+  }
+  50% {
+    margin-top: 10px;
+    visibility: visible;
+    border-color: rgb(0, 163, 220);
+  }
+  70% {
+    font-size: 0px;
+    color: transparent;
+    border-color: rgb(0, 163, 220);
+  }
+  95% {
+    visibility: visible;
+    font-size: 0px;
+    border-color: rgb(0, 163, 220);
+    visibility: hidden;
+  }
+  100% {
+    margin-top: -14px;
+    margin-bottom: 0px;
+    width: 0%;
+    height: 0px;
+    font-size: 0px;
+    visibility: hidden;
+    border-color: rgb(0, 163, 220);
+  }
+}
+@keyframes bisMenuClose {
+  0% {
+    margin-top: 20px;
+    width: 90%;
+    visibility: visible;
+    height: auto;
+  }
+  50% {
+    margin-top: 10px;
+    visibility: visible;
+    border-color: rgb(0, 163, 220);
+  }
+  70% {
+    font-size: 0px;
+    color: transparent;
+    border-color: rgb(0, 163, 220);
+  }
+  95% {
+    visibility: visible;
+    font-size: 0px;
+    border-color: rgb(0, 163, 220);
+    visibility: hidden;
+  }
+  100% {
+    margin-top: -14px;
+    margin-bottom: 0px;
+    width: 0%;
+    height: 0px;
+    font-size: 0px;
+    visibility: hidden;
+    border-color: rgb(0, 163, 220);
+  }
+}
+@-webkit-keyframes btnClose {
+  0% {
+    transform: rotate(1turn);
+  }
+  100% {
+    font-size: 0px;
+  }
+}
+@keyframes btnClose {
+  0% {
+    transform: rotate(1turn);
+  }
+  100% {
+    font-size: 0px;
+  }
+}
+@-webkit-keyframes btnOpen {
+  0% {
+    font-size: 0px;
+    transform: rotate(1turn);
+  }
+}
+@keyframes btnOpen {
+  0% {
+    font-size: 0px;
+    transform: rotate(1turn);
+  }
+}
+@-webkit-keyframes btnMenuClose {
+  0% {
+    font-size: 2rem;
+  }
+  100% {
+    font-size: 2.5rem;
+  }
+}
+@keyframes btnMenuClose {
+  0% {
+    font-size: 2rem;
+  }
+  100% {
+    font-size: 2.5rem;
+  }
+}
+@-webkit-keyframes btnMenuOpen {
+  0% {
+    font-size: 2rem;
+  }
+  100% {
+    font-size: 1.5rem;
+  }
+}
+@keyframes btnMenuOpen {
+  0% {
+    font-size: 2rem;
+  }
+  100% {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  header {
+    text-align: center;
+    width: 100%;
+    position: initial;
+    top: 0;
+    left: 0;
+  }
+  header .neonlogo {
+    border: solid 3px rgb(0, 163, 220);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px grey;
+    padding: 10px;
+    width: 90%;
+    height: 70px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  header .neonlogo h1 {
+    width: auto;
+    padding-top: 5px;
+    margin: auto;
+    margin-top: 0px;
+    color: rgb(225, 185, 75);
+    text-shadow: 1px 1px 10px grey;
+    font-family: roboting;
+    font-size: 2.2rem;
+    -webkit-animation: h1 1500ms;
+            animation: h1 1500ms;
+    -webkit-animation-iteration-count: 2;
+            animation-iteration-count: 2;
+  }
+  header .neonlogo .acch1 {
+    margin: auto;
+    color: rgb(0, 163, 220);
+    font-family: "Courier New", Courier, monospace;
+    text-shadow: 2px 2px 10px grey;
+    font-size: 1rem;
+    -webkit-animation: acch1 1500ms;
+            animation: acch1 1500ms;
+    -webkit-animation-iteration-count: 2;
+            animation-iteration-count: 2;
+    -webkit-animation-delay: 233ms;
+            animation-delay: 233ms;
+  }
+  header #bisMenu {
+    width: 0px;
+    max-width: 1200px;
+    height: 0px;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-right: solid 3px rgb(0, 163, 220);
+    border-left: solid 3px rgb(225, 185, 75);
+    border-top: solid 3px rgb(225, 185, 75);
+    border-bottom: solid 3px rgb(0, 163, 220);
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0;
+    z-index: 1;
+    transition-duration: 0ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header #bisMenu ul {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0px;
+  }
+  header #bisMenu li {
+    list-style-type: none;
+    margin: auto;
+    width: 45%;
+    text-align: center;
+    padding: 5px;
+    margin: 0px 0px 0px 0px;
+  }
+  header #bisMenu li a {
+    font-family: "Courier New", Courier, monospace;
+    text-decoration: none;
+    margin: auto;
+    color: rgb(88, 88, 88);
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+  }
+  header #bisMenu li a:hover {
+    color: rgb(250, 5, 229);
+    text-shadow: 1px 1px 3px grey;
+    -webkit-animation: menu 500ms;
+            animation: menu 500ms;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  header #bisMenu i {
+    font-size: 2.4rem;
+    color: rgb(0, 163, 220);
+    -webkit-animation: menu 500ms;
+            animation: menu 500ms;
+  }
+  header #bisMenu #close {
+    background-color: transparent;
+    color: rgb(0, 163, 220);
+    border: none;
+    font-size: 23px;
+    margin: auto;
+  }
+}
+.content {
+  margin: 10px;
+}
+.content h2 {
+  text-align: left;
+  text-decoration: underline;
+  font-size: 1.5vh;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.lastProdBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 100px;
+}
+.lastProdBox .lastprod {
+  box-shadow: rgb(26, 26, 26) 2px 2px 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: solid 2px rgb(88, 88, 88);
+  border-radius: 10px;
+  width: 32%;
+  min-width: 300px;
+  height: auto;
+  min-height: 450px;
+  transition-duration: 100ms;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  margin: 0px;
+  padding-bottom: 15px;
+}
+.lastProdBox .lastprod:hover {
+  -webkit-animation: content 400ms;
+          animation: content 400ms;
+  border-color: rgb(250, 5, 229);
+  box-shadow: rgb(170, 170, 170) 1px 1px 15px;
+  transform: scale(1.01);
+}
+.lastProdBox .lastprod .logobox {
+  background-color: rgb(225, 185, 75);
+  width: 100%;
+  height: 80%;
+  margin: auto;
+  padding: 0px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lastProdBox .lastprod .logobox img {
+  width: 70%;
+  height: auto;
+}
+.lastProdBox .lastprod .textpart {
+  color: rgb(225, 185, 75);
+  font-weight: 600;
+  background-color: transparent;
+  border-radius: 8px 8px 0px 0px;
+  font-family: "Courier New", Courier, monospace;
+}
+.lastProdBox .lastprod .textpart h4 {
+  color: rgb(0, 163, 220);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2.2vh;
+  margin: 8px;
+}
+.lastProdBox .lastprod .showon {
+  font-size: 20px;
+  height: 30px;
+}
+.lastProdBox .lastprod .showon a {
+  text-decoration: none;
+  color: rgb(61, 61, 61);
+  transition: 300ms;
+}
+.lastProdBox .lastprod .showon a :visited {
+  color: rgb(61, 61, 61);
+}
+.lastProdBox .lastprod .showon :hover {
+  color: rgb(250, 5, 229);
+  transition: 300ms;
+}
+
+@-webkit-keyframes content {
+  0% {
+    border-color: rgb(59, 59, 59);
+    box-shadow: none;
+  }
+  5% {
+    border-color: rgb(250, 5, 229);
+  }
+  6% {
+    border-color: rgb(59, 59, 59);
+    box-shadow: none;
+  }
+  7% {
+    border-color: rgb(250, 5, 229);
+  }
+  14% {
+    border-color: rgb(59, 59, 59);
+    box-shadow: none;
+  }
+  15% {
+    border-color: rgb(250, 5, 229);
+  }
+  19% {
+    border-color: rgb(59, 59, 59);
+    box-shadow: none;
+  }
+  20% {
+    border-color: rgb(250, 5, 229);
+  }
+  21% {
+    border-color: rgb(59, 59, 59);
+    box-shadow: none;
+  }
+  59% {
+    border-color: rgb(59, 59, 59);
+    box-shadow: none;
+  }
+  60% {
+    border-color: rgb(250, 5, 229);
+  }
+  61% {
+    border-color: rgb(250, 5, 229);
+  }
+  97% {
+    border-color: rgb(59, 59, 59);
+    box-shadow: none;
+  }
+  100% {
+    border-color: rgb(250, 5, 229);
+  }
+}
+
+@keyframes content {
+  0% {
+    border-color: rgb(59, 59, 59);
+    box-shadow: none;
+  }
+  5% {
+    border-color: rgb(250, 5, 229);
+  }
+  6% {
+    border-color: rgb(59, 59, 59);
+    box-shadow: none;
+  }
+  7% {
+    border-color: rgb(250, 5, 229);
+  }
+  14% {
+    border-color: rgb(59, 59, 59);
+    box-shadow: none;
+  }
+  15% {
+    border-color: rgb(250, 5, 229);
+  }
+  19% {
+    border-color: rgb(59, 59, 59);
+    box-shadow: none;
+  }
+  20% {
+    border-color: rgb(250, 5, 229);
+  }
+  21% {
+    border-color: rgb(59, 59, 59);
+    box-shadow: none;
+  }
+  59% {
+    border-color: rgb(59, 59, 59);
+    box-shadow: none;
+  }
+  60% {
+    border-color: rgb(250, 5, 229);
+  }
+  61% {
+    border-color: rgb(250, 5, 229);
+  }
+  97% {
+    border-color: rgb(59, 59, 59);
+    box-shadow: none;
+  }
+  100% {
+    border-color: rgb(250, 5, 229);
+  }
+}
+@media only screen and (max-width: 800px) {
+  .content {
+    margin: 10px;
+  }
+  .content h2 {
+    text-align: left;
+    text-decoration: underline;
+    font-size: 1.5vh;
+    font-family: "Courier New", Courier, monospace;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .lastProdBox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 0px;
+    margin-bottom: 100px;
+  }
+  .lastProdBox .lastprod {
+    box-shadow: rgb(26, 26, 26) 2px 2px 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: solid 2px rgb(88, 88, 88);
+    border-radius: 2px;
+    width: 100%;
+    min-width: 300px;
+    height: 400px;
+    transition-duration: 100ms;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    margin: 0px;
+    margin-bottom: 20px;
+    padding: 0px;
+  }
+  .lastProdBox .lastprod:hover {
+    -webkit-animation: content 400ms;
+            animation: content 400ms;
+    border-color: rgb(250, 5, 229);
+    box-shadow: rgb(170, 170, 170) 1px 1px 15px;
+    transform: scale(1.01);
+  }
+  .lastProdBox .lastprod .logobox {
+    background-color: rgb(225, 185, 75);
+    width: 100%;
+    height: 70%;
+    margin: 0;
+    margin-bottom: 0px;
+    padding: 0px;
+    border-radius: 0px 0px 1px 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lastProdBox .lastprod .logobox img {
+    width: 50%;
+    max-width: 200px;
+    height: auto;
+  }
+  .lastProdBox .lastprod .textpart {
+    color: rgb(225, 185, 75);
+    font-weight: 600;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 8px 8px 0px 0px;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .lastProdBox .lastprod .textpart h4 {
+    color: rgb(0, 163, 220);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 2.2vh;
+    margin: 8px;
+  }
+  .lastProdBox .lastprod .showon {
+    font-size: 20px;
+    height: 30px;
+  }
+  .lastProdBox .lastprod .showon a {
+    text-decoration: none;
+    color: rgb(61, 61, 61);
+    transition: 300ms;
+  }
+  .lastProdBox .lastprod .showon a :visited {
+    color: rgb(61, 61, 61);
+  }
+  .lastProdBox .lastprod .showon :hover {
+    color: rgb(250, 5, 229);
+    transition: 300ms;
+  }
+  @-webkit-keyframes content {
+    0% {
+      border-color: rgb(59, 59, 59);
+      box-shadow: none;
+    }
+    5% {
+      border-color: rgb(250, 5, 229);
+    }
+    6% {
+      border-color: rgb(59, 59, 59);
+      box-shadow: none;
+    }
+    7% {
+      border-color: rgb(250, 5, 229);
+    }
+    14% {
+      border-color: rgb(59, 59, 59);
+      box-shadow: none;
+    }
+    15% {
+      border-color: rgb(250, 5, 229);
+    }
+    19% {
+      border-color: rgb(59, 59, 59);
+      box-shadow: none;
+    }
+    20% {
+      border-color: rgb(250, 5, 229);
+    }
+    21% {
+      border-color: rgb(59, 59, 59);
+      box-shadow: none;
+    }
+    59% {
+      border-color: rgb(59, 59, 59);
+      box-shadow: none;
+    }
+    60% {
+      border-color: rgb(250, 5, 229);
+    }
+    61% {
+      border-color: rgb(250, 5, 229);
+    }
+    97% {
+      border-color: rgb(59, 59, 59);
+      box-shadow: none;
+    }
+    100% {
+      border-color: rgb(250, 5, 229);
+    }
+  }
+  @keyframes content {
+    0% {
+      border-color: rgb(59, 59, 59);
+      box-shadow: none;
+    }
+    5% {
+      border-color: rgb(250, 5, 229);
+    }
+    6% {
+      border-color: rgb(59, 59, 59);
+      box-shadow: none;
+    }
+    7% {
+      border-color: rgb(250, 5, 229);
+    }
+    14% {
+      border-color: rgb(59, 59, 59);
+      box-shadow: none;
+    }
+    15% {
+      border-color: rgb(250, 5, 229);
+    }
+    19% {
+      border-color: rgb(59, 59, 59);
+      box-shadow: none;
+    }
+    20% {
+      border-color: rgb(250, 5, 229);
+    }
+    21% {
+      border-color: rgb(59, 59, 59);
+      box-shadow: none;
+    }
+    59% {
+      border-color: rgb(59, 59, 59);
+      box-shadow: none;
+    }
+    60% {
+      border-color: rgb(250, 5, 229);
+    }
+    61% {
+      border-color: rgb(250, 5, 229);
+    }
+    97% {
+      border-color: rgb(59, 59, 59);
+      box-shadow: none;
+    }
+    100% {
+      border-color: rgb(250, 5, 229);
+    }
+  }
+}
+footer {
+  width: 100%;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+footer p {
+  color: rgb(225, 185, 75);
+  font-family: roboting;
+  font-size: 2.2vh;
+  margin: 10px;
+}
+footer #socialBox {
+  margin: auto;
+  font-size: 45px;
+  padding-bottom: 15px;
+}
+footer #socialBox a {
+  color: rgb(88, 88, 88);
+  transition: 300ms;
+  margin: 18px;
+}
+footer #socialBox a :visited {
+  color: rgb(88, 88, 88);
+}
+footer #socialBox a :hover {
+  transform: scale(1.15) rotate(0.05turn);
+  transition: 300ms;
+  color: rgb(250, 5, 229);
+}
+footer #socialBox i {
+  transition: 300ms;
+}
+
+@media only screen and (max-width: 800px) {
+  footer {
+    width: 100%;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+  }
+  footer p {
+    color: rgb(225, 185, 75);
+    font-family: roboting;
+    font-size: 25px;
+    margin: 15px;
+  }
+  footer #socialBox {
+    margin: auto;
+    font-size: 50px;
+    padding-bottom: 0px;
+  }
+  footer #socialBox a {
+    color: rgb(88, 88, 88);
+    transition: 300ms;
+    margin: 10px;
+  }
+  footer #socialBox a :visited {
+    color: rgb(88, 88, 88);
+  }
+  footer #socialBox a :hover {
+    transform: scale(1.15) rotate(0.05turn);
+    transition: 300ms;
+    color: rgb(250, 5, 229);
+  }
+  footer #socialBox i {
+    transition: 300ms;
+  }
+}
+#contact-form {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  padding: 40px;
+  margin: auto;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+#contact-form input {
+  margin: 20px;
+  border-radius: 10px;
+  height: 25px;
+  text-align: left;
+  border-color: rgb(0, 163, 220);
+}
+#contact-form textarea {
+  height: 70px;
+  margin: 20px;
+  border-radius: 10px;
+  text-align: left;
+  border-color: rgb(0, 163, 220);
+}
+#contact-form .send {
+  color: rgb(88, 88, 88);
+  background-color: rgb(0, 163, 220);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 700;
+  height: 50px;
+  width: 180px;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.oclink img {
+  width: 150px;
+}
+
+.project {
+  max-width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.projects {
+  background-color: rgba(249, 249, 249, 0.3);
+  box-shadow: rgb(198, 198, 198) 3px 3px 30px;
+  margin: 15px;
+  padding: 10px;
+  width: 240px;
+  height: 240px;
+  border-radius: 10px;
+}
+
+@font-face {
+  font-family: roboting;
+  src: url(../fonts/Fasthand/Fasthand-Regular.ttf);
+}
+@font-face {
+  font-family: raleway;
+  src: url(../fonts/Raleway/static/Raleway-Regular.ttf);
+}
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-repeat: unset;
+  justify-content: flex-end;
+  color: rgb(88, 88, 88);
+  background-image: url(../img/black-background\ .jpeg);
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  text-align: center;
+  margin: auto;
+  max-width: 1200px;
+}
+
+#intro {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(0, 163, 220);
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px 10px 10px 10px;
+  border: solid 2px rgb(225, 185, 75);
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+#intro .judes {
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+}
+#intro .judes img {
+  transition: 150ms;
+  background-color: rgb(225, 185, 75);
+  border-radius: 5px;
+  margin: 0px;
+  padding: 0px;
+  width: auto;
+}
+#intro .judes :hover {
+  background-color: rgb(0, 163, 220);
+  transition: 500ms ease;
+}
+#intro .textzone {
+  width: 60%;
+  margin: auto;
+}/*# sourceMappingURL=main.css.map */

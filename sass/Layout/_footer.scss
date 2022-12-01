@@ -48,17 +48,17 @@ footer{
         p{
             color: $color-3;
             font-family: roboting;
-            font-size: 2.6vh;
-            margin: 10px;
+            font-size: 25px;
+            margin: 15px;
         }
         #socialBox{
             margin: auto;
-            font-size: 45px;
-            padding-bottom: 15px;
+            font-size: 50px;
+            padding-bottom: 0px;
             a{
                 color: $color-1;
                 transition: 300ms;
-                margin: 18px;
+                margin: 10px;
                 :visited{
                     color: $color-1;
                 }
