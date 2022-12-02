@@ -37,14 +37,12 @@
         margin: 0px;
         margin-bottom: 20px;
         padding-bottom: 15px;
-
         &:hover {
             animation: content 400ms;
             border-color: $color-4;
             box-shadow: rgb(170, 170, 170) 1px 1px 15px;
             transform: scale(1.01);
         }
-
         .logobox {
             background-color: $color-3;
             width: 100%;
@@ -61,7 +59,6 @@
                 height: auto;
             }
         }
-
         .textpart {
             color: $color-3;
             font-weight: 600;
@@ -76,21 +73,17 @@
                 margin: 8px;
             }
         }
-
         .showon {
             font-size: 20px;
             height: 30px;
-
             a {
                 text-decoration: none;
                 color: rgb(61, 61, 61);
                 transition: 300ms;
-
                 :visited {
                     color: rgb(61, 61, 61);
                 }
             }
-
             :hover {
                 color: $color-4;
                 transition: 300ms;
@@ -167,7 +160,7 @@
 
 @media only screen and (max-width: 800px) {
     .content {
-        margin: 10px;
+        margin: 20px;
 
         h2 {
             text-align: left;
@@ -182,7 +175,7 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        width: 80%;
+        width: 100%;
         justify-content: space-between;
         align-items: center;
         margin: auto;
