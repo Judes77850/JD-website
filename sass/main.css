@@ -662,121 +662,8 @@ header .neonlogo .acch1 {
     color: rgb(250, 5, 229);
   }
 }
-@media only screen and (max-width: 800px) {
-  header {
-    text-align: center;
-    width: 100%;
-    position: initial;
-    top: 0;
-    left: 0;
-  }
-  header .neonlogo {
-    border: solid 3px rgb(0, 163, 220);
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px grey;
-    padding: 10px;
-    width: 90%;
-    height: 70px;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 30px;
-  }
-  header .neonlogo h1 {
-    width: auto;
-    padding-top: 5px;
-    margin: auto;
-    margin-top: 0px;
-    color: rgb(225, 185, 75);
-    text-shadow: 1px 1px 10px grey;
-    font-family: roboting;
-    font-size: 2.2rem;
-    -webkit-animation: h1 1500ms;
-            animation: h1 1500ms;
-    -webkit-animation-iteration-count: 2;
-            animation-iteration-count: 2;
-  }
-  header .neonlogo .acch1 {
-    margin: auto;
-    color: rgb(0, 163, 220);
-    font-family: "Courier New", Courier, monospace;
-    text-shadow: 2px 2px 10px grey;
-    font-size: 1rem;
-    -webkit-animation: acch1 1500ms;
-            animation: acch1 1500ms;
-    -webkit-animation-iteration-count: 2;
-            animation-iteration-count: 2;
-    -webkit-animation-delay: 233ms;
-            animation-delay: 233ms;
-  }
-  header #bisMenu {
-    width: 0px;
-    max-width: 1200px;
-    height: 0px;
-    visibility: hidden;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-right: solid 3px rgb(0, 163, 220);
-    border-left: solid 3px rgb(225, 185, 75);
-    border-top: solid 3px rgb(225, 185, 75);
-    border-bottom: solid 3px rgb(0, 163, 220);
-    border-radius: 5px;
-    font-weight: 700;
-    font-size: 0;
-    z-index: 1;
-    transition-duration: 0ms;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  header #bisMenu ul {
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 0px;
-  }
-  header #bisMenu li {
-    list-style-type: none;
-    margin: auto;
-    width: 45%;
-    text-align: center;
-    padding: 5px;
-    margin: 0px 0px 0px 0px;
-  }
-  header #bisMenu li a {
-    font-family: "Courier New", Courier, monospace;
-    text-decoration: none;
-    margin: auto;
-    color: rgb(88, 88, 88);
-    width: 100%;
-    height: 100%;
-    padding: 0px;
-  }
-  header #bisMenu li a:hover {
-    color: rgb(250, 5, 229);
-    text-shadow: 1px 1px 3px grey;
-    -webkit-animation: menu 500ms;
-            animation: menu 500ms;
-    -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
-  }
-  header #bisMenu i {
-    font-size: 2.4rem;
-    color: rgb(0, 163, 220);
-    -webkit-animation: menu 500ms;
-            animation: menu 500ms;
-  }
-  header #bisMenu #close {
-    background-color: transparent;
-    color: rgb(0, 163, 220);
-    border: none;
-    font-size: 23px;
-    margin: auto;
-  }
-}
 #neonlogobox {
-  width: 95%;
+  width: 100%;
   max-width: 1200px;
   margin: auto;
   display: flex;
@@ -790,6 +677,8 @@ header .neonlogo .acch1 {
   justify-content: space-around;
   align-items: center;
   margin: auto;
+  border-radius: 40px;
+  transition-duration: 300ms;
 }
 #neonlogobox #menuneonlogo a {
   color: rgb(0, 163, 220);
@@ -804,10 +693,16 @@ header .neonlogo .acch1 {
   color: rgb(0, 163, 220);
   border: none;
   font-size: 2rem;
+  z-index: 1;
+}
+#neonlogobox #btn :hover {
+  -webkit-animation: menu 500ms;
+          animation: menu 500ms;
+  color: rgb(250, 5, 229);
 }
 #neonlogobox .menulogo {
   color: rgb(0, 163, 220);
-  font-size: 2rem;
+  font-size: 30px;
 }
 
 #bisMenu {
@@ -815,15 +710,15 @@ header .neonlogo .acch1 {
   max-width: 1200px;
   height: 0px;
   visibility: hidden;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: black;
   border-right: solid 3px rgb(0, 163, 220);
   border-left: solid 3px rgb(225, 185, 75);
   border-top: solid 3px rgb(225, 185, 75);
   border-bottom: solid 3px rgb(0, 163, 220);
-  border-radius: 5px;
+  border-radius: 40px;
   font-weight: 700;
   font-size: 0;
-  z-index: 1;
+  z-index: 3;
   transition-duration: 0ms;
 }
 #bisMenu ul {
@@ -832,6 +727,7 @@ header .neonlogo .acch1 {
   justify-content: center;
   align-items: center;
   padding: 0px;
+  margin: 0px;
   text-align: center;
 }
 #bisMenu li {
@@ -875,37 +771,49 @@ header .neonlogo .acch1 {
 
 @-webkit-keyframes bisMenuOpen {
   0% {
-    margin-top: 0px;
+    margin-top: 40px;
     width: 0%;
+    height: 0px;
     font-size: 0px;
   }
   50% {
-    margin-top: 10px;
+    margin-top: 70px;
+    visibility: visible;
+    border-color: rgb(0, 163, 220);
+    font-size: 0px;
+    height: 0px;
   }
   95% {
     width: 95%;
+    margin-top: 50px;
   }
   100% {
-    margin-top: 20px;
     width: 90%;
+    margin-top: 50px;
   }
 }
 
 @keyframes bisMenuOpen {
   0% {
-    margin-top: 0px;
+    margin-top: 40px;
     width: 0%;
+    height: 0px;
     font-size: 0px;
   }
   50% {
-    margin-top: 10px;
+    margin-top: 70px;
+    visibility: visible;
+    border-color: rgb(0, 163, 220);
+    font-size: 0px;
+    height: 0px;
   }
   95% {
     width: 95%;
+    margin-top: 50px;
   }
   100% {
-    margin-top: 20px;
     width: 90%;
+    margin-top: 50px;
   }
 }
 @-webkit-keyframes bisMenuClose {
@@ -916,29 +824,32 @@ header .neonlogo .acch1 {
     height: auto;
   }
   50% {
-    margin-top: 10px;
+    margin-top: 70px;
     visibility: visible;
     border-color: rgb(0, 163, 220);
+    font-size: 0px;
   }
   70% {
-    font-size: 0px;
     color: transparent;
-    border-color: rgb(0, 163, 220);
+    border-color: transparent;
+    font-size: 0px;
+    width: 0%;
+    height: 0px;
   }
   95% {
-    visibility: visible;
-    font-size: 0px;
-    border-color: rgb(0, 163, 220);
+    border-color: transparent;
     visibility: hidden;
+    width: 0%;
+    height: 0px;
+    font-size: 0px;
   }
   100% {
-    margin-top: -14px;
-    margin-bottom: 0px;
+    margin-top: 30px;
     width: 0%;
     height: 0px;
     font-size: 0px;
     visibility: hidden;
-    border-color: rgb(0, 163, 220);
+    border-color: transparent;
   }
 }
 @keyframes bisMenuClose {
@@ -949,34 +860,40 @@ header .neonlogo .acch1 {
     height: auto;
   }
   50% {
-    margin-top: 10px;
+    margin-top: 70px;
     visibility: visible;
     border-color: rgb(0, 163, 220);
+    font-size: 0px;
   }
   70% {
-    font-size: 0px;
     color: transparent;
-    border-color: rgb(0, 163, 220);
+    border-color: transparent;
+    font-size: 0px;
+    width: 0%;
+    height: 0px;
   }
   95% {
-    visibility: visible;
-    font-size: 0px;
-    border-color: rgb(0, 163, 220);
+    border-color: transparent;
     visibility: hidden;
+    width: 0%;
+    height: 0px;
+    font-size: 0px;
   }
   100% {
-    margin-top: -14px;
-    margin-bottom: 0px;
+    margin-top: 30px;
     width: 0%;
     height: 0px;
     font-size: 0px;
     visibility: hidden;
-    border-color: rgb(0, 163, 220);
+    border-color: transparent;
   }
 }
 @-webkit-keyframes btnClose {
   0% {
     transform: rotate(1turn);
+  }
+  50% {
+    font-size: 0px;
   }
   100% {
     font-size: 0px;
@@ -986,6 +903,9 @@ header .neonlogo .acch1 {
   0% {
     transform: rotate(1turn);
   }
+  50% {
+    font-size: 0px;
+  }
   100% {
     font-size: 0px;
   }
@@ -993,29 +913,41 @@ header .neonlogo .acch1 {
 @-webkit-keyframes btnOpen {
   0% {
     font-size: 0px;
+  }
+  50% {
+    font-size: 0px;
+  }
+  100% {
     transform: rotate(1turn);
   }
 }
 @keyframes btnOpen {
   0% {
     font-size: 0px;
+  }
+  50% {
+    font-size: 0px;
+  }
+  100% {
     transform: rotate(1turn);
   }
 }
 @-webkit-keyframes btnMenuClose {
   0% {
-    font-size: 2rem;
+    font-size: 0rem;
   }
   100% {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
+    margin-bottom: -20px;
   }
 }
 @keyframes btnMenuClose {
   0% {
-    font-size: 2rem;
+    font-size: 0rem;
   }
   100% {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
+    margin-bottom: -20px;
   }
 }
 @-webkit-keyframes btnMenuOpen {
@@ -1085,12 +1017,12 @@ header .neonlogo .acch1 {
     max-width: 1200px;
     height: 0px;
     visibility: hidden;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: black;
     border-right: solid 3px rgb(0, 163, 220);
     border-left: solid 3px rgb(225, 185, 75);
     border-top: solid 3px rgb(225, 185, 75);
     border-bottom: solid 3px rgb(0, 163, 220);
-    border-radius: 5px;
+    border-radius: 40px;
     font-weight: 700;
     font-size: 0;
     z-index: 1;
@@ -1106,11 +1038,11 @@ header .neonlogo .acch1 {
     width: 100%;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     margin: 0px;
   }
   header #bisMenu li {
     list-style-type: none;
-    margin: auto;
     width: 45%;
     text-align: center;
     padding: 5px;
@@ -1145,6 +1077,7 @@ header .neonlogo .acch1 {
     border: none;
     font-size: 23px;
     margin: auto;
+    margin-top: -30px;
   }
 }
 .content {
@@ -1183,6 +1116,7 @@ header .neonlogo .acch1 {
   flex-direction: column-reverse;
   justify-content: flex-start;
   margin: 0px;
+  margin-bottom: 20px;
   padding-bottom: 15px;
 }
 .lastProdBox .lastprod:hover {
@@ -1375,7 +1309,7 @@ header .neonlogo .acch1 {
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-end;
-    margin: 0px;
+    margin: auto;
     margin-bottom: 20px;
     padding: 0px;
   }
