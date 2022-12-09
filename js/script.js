@@ -4,20 +4,13 @@ window.addEventListener("scroll", () => {
   const nav = document.getElementById("menuneonlogo");
   let navBar = document.getElementById("bisMenu");
   const box = document.getElementById("neonlogobox");
-  if (window.scrollY >= 140) {
-    box.style.display = "flex";
-    box.style.flexDirection = "column";
-    box.style.justifyContent = "space-between";
-    box.style.alignItems = "center";
-    box.style.width = "100%";
+  if (window.scrollY >= 150) {
     nav.style.position = "fixed";
     navBar.style.position = "initial";
-  } else if (window.scrollY <= 140) {
+  } else if (window.scrollY <= 150) {
     nav.style.position = "relative";
     nav.style.backgroundColor = "";
     nav.style.marginTop = "0px";
-    navBar.style.position = "relative";
-    navBar.style.marginTop = "0px";
   }
 });
 

@@ -256,6 +256,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     background-color: black;
     margin-top: 0px;
     #menuneonlogo{
@@ -263,9 +264,9 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: auto;
         transition-duration: 300ms;
         padding: 10px;
+        margin: 0px;
         z-index: 2;
         background-color: black;
         a{
@@ -313,7 +314,7 @@ header {
 #bisMenu {
     width: 100%;
     max-width: 1200px;
-    height: 60px;
+    height: 50px;
     margin: auto;
     margin-top: -50px;
     padding: 0px;
@@ -402,6 +403,7 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
         background-color: black;
         margin-top: 0px;
         #menuneonlogo{
@@ -409,9 +411,8 @@ header {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: auto;
+            margin: 0px;
             transition-duration: 300ms;
-            padding: 10px;
             z-index: 2;
             background-color: black;
             a{
@@ -466,7 +467,7 @@ header {
     #bisMenu {
         width: 100%;
         max-width: 1200px;
-        height: 60px;
+        height: 50px;
         margin: auto;
         margin-top: -50px;
         padding: 0px;
@@ -490,6 +491,7 @@ header {
             margin-top: 20px;
             margin-bottom: 0px;
             text-align: center;
+            width: 40%;
             a {
                 font-family: 'Courier New', Courier, monospace;
                 text-decoration: none;
