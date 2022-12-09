@@ -863,7 +863,7 @@ header .neonlogo .acch1 {
   }
   #neonlogobox #menuneonlogo a {
     color: rgb(0, 163, 220);
-    margin: 100px;
+    margin: 30px;
   }
   #neonlogobox #menuneonlogo a :hover {
     -webkit-animation: menu 500ms;
