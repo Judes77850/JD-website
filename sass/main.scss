@@ -26,7 +26,7 @@ body {
     background-repeat: unset;
     justify-content: flex-end;
     color: $color-1;
-    background-image: url(../img/black-background\ .jpeg);
+    background-color: rgb(14, 14, 14);
     background-attachment: fixed;
     background-repeat: repeat;
     background-size: 100%;
@@ -37,44 +37,4 @@ main {
     text-align: center;
     margin: auto;
     max-width: 1200px;
-}
-
-#intro {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 13px;
-    font-weight: 600;
-    color: $color-2;
-    width: 60%;
-    background-color: rgba($color: #000000, $alpha: 0.4);
-    border-radius: 10px 10px 10px 10px;
-    border: solid 2px $color-3;
-    margin: auto;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    .judes {
-        height: auto;
-        margin: 0px;
-        padding: 0px;
-        img {
-            transition: 150ms;
-            background-color: $color-3;
-            border-radius: 5px;
-            margin: 0px;
-            padding: 0px;
-            width: auto;
-        }
-        :hover {
-            background-color: $color-2;
-            transition: 500ms ease;
-        }
-
-    }
-
-    .textzone {
-        width: 60%;
-        margin: auto;
-    }
 }

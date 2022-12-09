@@ -4,7 +4,8 @@
     h2 {
         text-align: left;
         text-decoration: underline;
-        font-size: 1.5vh;
+        font-size: 25px;
+        color: $color-2;
         font-family: 'Courier New', Courier, monospace;
         margin-top: 40px;
         margin-bottom: 40px;
@@ -24,7 +25,7 @@
     .lastprod {
         box-shadow: rgb(26, 26, 26) 2px 2px 5px;
         background-color: rgba($color: #000000, $alpha: 0.3);
-        border: solid 2px $color-1;
+        border: solid 1px $color-5;
         border-radius: 10px;
         width: 32%;
         min-width: 300px;
@@ -40,7 +41,7 @@
         &:hover {
             animation: content 400ms;
             border-color: $color-4;
-            box-shadow: rgb(170, 170, 170) 1px 1px 15px;
+            box-shadow: $color-4 1px 1px 15px;
             transform: scale(1.01);
         }
         .logobox {
@@ -49,7 +50,7 @@
             height: 80%;
             margin: auto;
             padding: 0px;
-            border-radius: 8px;
+            border-radius: 8px 8px 0px 0px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -62,6 +63,7 @@
         .textpart {
             color: $color-3;
             font-weight: 600;
+            height: 20%;
             background-color: transparent;
             border-radius: 8px 8px 0px 0px;
             font-family: 'Courier New', Courier, monospace;

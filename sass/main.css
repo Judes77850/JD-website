@@ -664,24 +664,28 @@ header .neonlogo .acch1 {
 }
 #neonlogobox {
   width: 100%;
-  max-width: 1200px;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: black;
+  margin-top: 0px;
 }
 #neonlogobox #menuneonlogo {
-  width: 80%;
-  max-width: 400px;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin: auto;
   border-radius: 40px;
   transition-duration: 300ms;
+  padding: 10px;
+  z-index: 2;
+  background-color: black;
 }
 #neonlogobox #menuneonlogo a {
   color: rgb(0, 163, 220);
+  margin: 100px;
 }
 #neonlogobox #menuneonlogo a :hover {
   -webkit-animation: menu 500ms;
@@ -692,34 +696,49 @@ header .neonlogo .acch1 {
   background-color: transparent;
   color: rgb(0, 163, 220);
   border: none;
-  font-size: 2rem;
-  z-index: 1;
+  font-size: 25px;
+  z-index: 2;
+  background-color: black;
+  -webkit-animation: btnMenuOpen 500ms;
+          animation: btnMenuOpen 500ms;
 }
 #neonlogobox #btn :hover {
   -webkit-animation: menu 500ms;
           animation: menu 500ms;
   color: rgb(250, 5, 229);
 }
+#neonlogobox #btnClose {
+  background-color: transparent;
+  color: rgb(0, 163, 220);
+  border: none;
+  font-size: 25px;
+  margin-left: -18px;
+  z-index: 1;
+  -webkit-animation: btnMenuOpen 500ms;
+          animation: btnMenuOpen 500ms;
+}
+#neonlogobox #btnClose :hover {
+  -webkit-animation: menu 500ms;
+          animation: menu 500ms;
+  color: rgb(250, 5, 229);
+}
 #neonlogobox .menulogo {
   color: rgb(0, 163, 220);
-  font-size: 30px;
+  font-size: 25px;
+  z-index: 2;
 }
 
 #bisMenu {
-  width: 0px;
+  width: 100%;
   max-width: 1200px;
-  height: 0px;
-  visibility: hidden;
+  height: 60px;
+  margin: auto;
+  margin-top: -50px;
+  padding: 0px;
   background-color: black;
-  border-right: solid 3px rgb(0, 163, 220);
-  border-left: solid 3px rgb(225, 185, 75);
-  border-top: solid 3px rgb(225, 185, 75);
-  border-bottom: solid 3px rgb(0, 163, 220);
-  border-radius: 40px;
   font-weight: 700;
-  font-size: 0;
-  z-index: 3;
-  transition-duration: 0ms;
+  font-size: 20px;
+  z-index: 1;
 }
 #bisMenu ul {
   display: flex;
@@ -734,7 +753,7 @@ header .neonlogo .acch1 {
   list-style-type: none;
   margin: auto;
   padding: 0px 0px 0px 0px;
-  margin-top: 0px;
+  margin-top: 20px;
   margin-bottom: 0px;
   text-align: center;
 }
@@ -755,215 +774,70 @@ header .neonlogo .acch1 {
           animation-iteration-count: 1;
 }
 #bisMenu i {
-  font-size: 2.4rem;
+  font-size: 25px;
   margin: 15px;
   color: rgb(0, 163, 220);
   -webkit-animation: menu 500ms;
           animation: menu 500ms;
 }
-#bisMenu #close {
-  background-color: transparent;
-  color: rgb(0, 163, 220);
-  border: none;
-  font-size: 23px;
-  margin: 0px;
-}
 
 @-webkit-keyframes bisMenuOpen {
   0% {
-    margin-top: 40px;
-    width: 0%;
-    height: 0px;
-    font-size: 0px;
-  }
-  50% {
-    margin-top: 70px;
-    visibility: visible;
-    border-color: rgb(0, 163, 220);
-    font-size: 0px;
-    height: 0px;
-  }
-  95% {
-    width: 95%;
-    margin-top: 50px;
+    margin-top: -50px;
   }
   100% {
-    width: 90%;
-    margin-top: 50px;
+    margin-top: 0px;
   }
 }
 
 @keyframes bisMenuOpen {
   0% {
-    margin-top: 40px;
-    width: 0%;
-    height: 0px;
-    font-size: 0px;
-  }
-  50% {
-    margin-top: 70px;
-    visibility: visible;
-    border-color: rgb(0, 163, 220);
-    font-size: 0px;
-    height: 0px;
-  }
-  95% {
-    width: 95%;
-    margin-top: 50px;
+    margin-top: -50px;
   }
   100% {
-    width: 90%;
-    margin-top: 50px;
+    margin-top: 0px;
   }
 }
 @-webkit-keyframes bisMenuClose {
   0% {
-    margin-top: 20px;
-    width: 90%;
-    visibility: visible;
-    height: auto;
-  }
-  50% {
-    margin-top: 70px;
-    visibility: visible;
-    border-color: rgb(0, 163, 220);
-    font-size: 0px;
-  }
-  70% {
-    color: transparent;
-    border-color: transparent;
-    font-size: 0px;
-    width: 0%;
-    height: 0px;
-  }
-  95% {
-    border-color: transparent;
-    visibility: hidden;
-    width: 0%;
-    height: 0px;
-    font-size: 0px;
+    margin-top: 0px;
   }
   100% {
-    margin-top: 30px;
-    width: 0%;
-    height: 0px;
-    font-size: 0px;
-    visibility: hidden;
-    border-color: transparent;
+    margin-top: -50px;
   }
 }
 @keyframes bisMenuClose {
   0% {
-    margin-top: 20px;
-    width: 90%;
-    visibility: visible;
-    height: auto;
-  }
-  50% {
-    margin-top: 70px;
-    visibility: visible;
-    border-color: rgb(0, 163, 220);
-    font-size: 0px;
-  }
-  70% {
-    color: transparent;
-    border-color: transparent;
-    font-size: 0px;
-    width: 0%;
-    height: 0px;
-  }
-  95% {
-    border-color: transparent;
-    visibility: hidden;
-    width: 0%;
-    height: 0px;
-    font-size: 0px;
+    margin-top: 0px;
   }
   100% {
-    margin-top: 30px;
-    width: 0%;
-    height: 0px;
-    font-size: 0px;
-    visibility: hidden;
-    border-color: transparent;
-  }
-}
-@-webkit-keyframes btnClose {
-  0% {
-    transform: rotate(1turn);
-  }
-  50% {
-    font-size: 0px;
-  }
-  100% {
-    font-size: 0px;
-  }
-}
-@keyframes btnClose {
-  0% {
-    transform: rotate(1turn);
-  }
-  50% {
-    font-size: 0px;
-  }
-  100% {
-    font-size: 0px;
-  }
-}
-@-webkit-keyframes btnOpen {
-  0% {
-    font-size: 0px;
-  }
-  50% {
-    font-size: 0px;
-  }
-  100% {
-    transform: rotate(1turn);
-  }
-}
-@keyframes btnOpen {
-  0% {
-    font-size: 0px;
-  }
-  50% {
-    font-size: 0px;
-  }
-  100% {
-    transform: rotate(1turn);
-  }
-}
-@-webkit-keyframes btnMenuClose {
-  0% {
-    font-size: 0rem;
-  }
-  100% {
-    font-size: 2.4rem;
-    margin-bottom: -20px;
-  }
-}
-@keyframes btnMenuClose {
-  0% {
-    font-size: 0rem;
-  }
-  100% {
-    font-size: 2.4rem;
-    margin-bottom: -20px;
+    margin-top: -50px;
   }
 }
 @-webkit-keyframes btnMenuOpen {
   0% {
-    font-size: 2rem;
+    font-size: 25px;
+  }
+  90% {
+    font-size: 25px;
+    z-index: 1;
   }
   100% {
-    font-size: 1.5rem;
+    z-index: 1;
+    opacity: 0;
   }
 }
 @keyframes btnMenuOpen {
   0% {
-    font-size: 2rem;
+    font-size: 25px;
+  }
+  90% {
+    font-size: 25px;
+    z-index: 1;
   }
   100% {
-    font-size: 1.5rem;
+    z-index: 1;
+    opacity: 0;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -982,7 +856,7 @@ header .neonlogo .acch1 {
     width: 90%;
     height: 70px;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 30px;
   }
   header .neonlogo h1 {
@@ -1086,7 +960,8 @@ header .neonlogo .acch1 {
 .content h2 {
   text-align: left;
   text-decoration: underline;
-  font-size: 1.5vh;
+  font-size: 25px;
+  color: rgb(0, 163, 220);
   font-family: "Courier New", Courier, monospace;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -1105,7 +980,7 @@ header .neonlogo .acch1 {
 .lastProdBox .lastprod {
   box-shadow: rgb(26, 26, 26) 2px 2px 5px;
   background-color: rgba(0, 0, 0, 0.3);
-  border: solid 2px rgb(88, 88, 88);
+  border: solid 1px rgb(59, 59, 59);
   border-radius: 10px;
   width: 32%;
   min-width: 300px;
@@ -1123,7 +998,7 @@ header .neonlogo .acch1 {
   -webkit-animation: content 400ms;
           animation: content 400ms;
   border-color: rgb(250, 5, 229);
-  box-shadow: rgb(170, 170, 170) 1px 1px 15px;
+  box-shadow: rgb(250, 5, 229) 1px 1px 15px;
   transform: scale(1.01);
 }
 .lastProdBox .lastprod .logobox {
@@ -1132,7 +1007,7 @@ header .neonlogo .acch1 {
   height: 80%;
   margin: auto;
   padding: 0px;
-  border-radius: 8px;
+  border-radius: 8px 8px 0px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1144,6 +1019,7 @@ header .neonlogo .acch1 {
 .lastProdBox .lastprod .textpart {
   color: rgb(225, 185, 75);
   font-weight: 600;
+  height: 20%;
   background-color: transparent;
   border-radius: 8px 8px 0px 0px;
   font-family: "Courier New", Courier, monospace;
@@ -1621,7 +1497,7 @@ body {
   background-repeat: unset;
   justify-content: flex-end;
   color: rgb(88, 88, 88);
-  background-image: url(../img/black-background\ .jpeg);
+  background-color: rgb(14, 14, 14);
   background-attachment: fixed;
   background-repeat: repeat;
   background-size: 100%;
@@ -1632,42 +1508,4 @@ main {
   text-align: center;
   margin: auto;
   max-width: 1200px;
-}
-
-#intro {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 13px;
-  font-weight: 600;
-  color: rgb(0, 163, 220);
-  width: 60%;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 10px 10px 10px 10px;
-  border: solid 2px rgb(225, 185, 75);
-  margin: auto;
-  margin-top: 30px;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
-}
-#intro .judes {
-  height: auto;
-  margin: 0px;
-  padding: 0px;
-}
-#intro .judes img {
-  transition: 150ms;
-  background-color: rgb(225, 185, 75);
-  border-radius: 5px;
-  margin: 0px;
-  padding: 0px;
-  width: auto;
-}
-#intro .judes :hover {
-  background-color: rgb(0, 163, 220);
-  transition: 500ms ease;
-}
-#intro .textzone {
-  width: 60%;
-  margin: auto;
 }/*# sourceMappingURL=main.css.map */
