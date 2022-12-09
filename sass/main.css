@@ -677,7 +677,6 @@ header .neonlogo .acch1 {
   justify-content: center;
   align-items: center;
   margin: auto;
-  border-radius: 40px;
   transition-duration: 300ms;
   padding: 10px;
   z-index: 2;
@@ -856,7 +855,6 @@ header .neonlogo .acch1 {
     justify-content: center;
     align-items: center;
     margin: auto;
-    border-radius: 40px;
     transition-duration: 300ms;
     padding: 10px;
     z-index: 2;
@@ -870,6 +868,12 @@ header .neonlogo .acch1 {
     -webkit-animation: menu 500ms;
             animation: menu 500ms;
     color: rgb(250, 5, 229);
+  }
+  #neonlogobox .neonlogo {
+    width: 90%;
+  }
+  #neonlogobox .neonlogo .acch1 {
+    font-size: 16px;
   }
   #neonlogobox #btn {
     background-color: transparent;

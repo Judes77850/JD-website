@@ -264,7 +264,6 @@ header {
         justify-content: center;
         align-items: center;
         margin: auto;
-        border-radius: 40px;
         transition-duration: 300ms;
         padding: 10px;
         z-index: 2;
@@ -411,7 +410,6 @@ header {
             justify-content: center;
             align-items: center;
             margin: auto;
-            border-radius: 40px;
             transition-duration: 300ms;
             padding: 10px;
             z-index: 2;
@@ -423,6 +421,13 @@ header {
                     animation: menu 500ms;
                     color: $color-4;
                 }
+            }
+        }
+        .neonlogo{
+            width: 90%;
+            .acch1{
+                font-size: 16px;
+
             }
         }
         #btn{
