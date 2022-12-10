@@ -397,6 +397,8 @@ header {
 
 
 @media only screen and (max-width: 800px) {
+header{
+    width: 100%;
     #neonlogobox{
         width: 100%;
         margin: auto;
@@ -407,11 +409,13 @@ header {
         background-color: black;
         margin-top: 0px;
         #menuneonlogo{
-            width: 100%;
+            max-width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 0px;
+            padding: 0px;
+            padding-bottom: 10px;
             transition-duration: 300ms;
             z-index: 2;
             background-color: black;
@@ -449,7 +453,7 @@ header {
             color: $color-2;
             border: none;
             font-size: 25px;
-            margin-left: -30px;
+            margin-left: -18px;
             z-index: 1;
             animation: btnMenuOpen 500ms;
             :hover{
@@ -548,4 +552,5 @@ header {
             opacity: 0;
         }
     }
+}
 }
