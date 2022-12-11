@@ -1,23 +1,24 @@
 footer{
     width: 100%;
     height: 120px;
-    background-color: rgba($color: #000000, $alpha: 0.3);
+    background-color: black;
     border-radius: 3px;
     left: 0;
     bottom: 0;
     text-align: center;
     p{
-        color: $color-3;
+        color: $color-4;
         font-family: roboting;
         font-size: 25px;
         margin: 10px;
+        padding-top: 10px;
     }
     #socialBox{
         margin: auto;
         font-size: 45px;
         padding-bottom: 15px;
         a{
-            color: $color-1;
+            color: $color-6;
             transition: 300ms;
             margin: 18px;
             :visited{
@@ -40,25 +41,26 @@ footer{
     footer{
         width: 100%;
         height: 120px;
-        background-color: rgba($color: #000000, $alpha: 0.3);
+        background-color: black;
         border-radius: 3px;
         left: 0;
         bottom: 0;
         text-align: center;
         p{
-            color: $color-3;
+            color: $color-4;
             font-family: roboting;
             font-size: 25px;
-            margin: 15px;
+            margin: 10px;
+            padding-top: 10px;
         }
         #socialBox{
             margin: auto;
-            font-size: 50px;
-            padding-bottom: 0px;
+            font-size: 45px;
+            padding-bottom: 15px;
             a{
-                color: $color-1;
+                color: $color-6;
                 transition: 300ms;
-                margin: 10px;
+                margin: 18px;
                 :visited{
                     color: $color-1;
                 }

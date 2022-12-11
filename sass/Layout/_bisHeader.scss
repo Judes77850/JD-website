@@ -19,14 +19,14 @@ header {
         max-height: 100px;
         margin: auto;
         margin-top: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
 
         h1 {
             width: 80%;
             padding-top: 10px;
             margin: auto;
             margin-top: 0px;
-            color: $color-3;
+            color: $color-4;
             text-shadow: 1px 1px 10px grey;
             font-family: roboting;
             font-size: 2rem;
@@ -51,74 +51,74 @@ header {
 
 @keyframes h1 {
     0% {
-        color: $color-5;
+        color: $color-4;
         text-shadow: none;
     }
 
     5% {
-        color: $color-3;
+        color: $color-6;
     }
 
     6% {
-        color: $color-5;
+        color: $color-4;
         text-shadow: none;
     }
 
     7% {
-        color: $color-3;
+        color: $color-6;
     }
 
     14% {
-        color: $color-5;
+        color: $color-4;
         text-shadow: none;
     }
 
     15% {
-        color: $color-3;
+        color: $color-6;
     }
 
     19% {
-        color: $color-5;
+        color: $color-6;
         text-shadow: none;
     }
 
     20% {
-        color: $color-3;
+        color: $color-4;
     }
 
     21% {
-        color: $color-5;
+        color: $color-6;
         text-shadow: none;
     }
 
     59% {
-        color: $color-5;
+        color: $color-6;
         text-shadow: none;
     }
 
     60% {
-        color: $color-3;
+        color: $color-4;
     }
 
     61% {
-        color: $color-5;
+        color: $color-6;
         text-shadow: none;
     }
 
     97% {
-        color: $color-5;
+        color: $color-4;
         text-shadow: none;
     }
 
     100% {
-        color: $color-3;
+        color: $color-4;
     }
 
 }
 
 @keyframes acch1 {
     0% {
-        color: $color-5;
+        color: $color-6;
         text-shadow: none;
     }
 
@@ -127,7 +127,7 @@ header {
     }
 
     6% {
-        color: $color-5;
+        color: $color-6;
         text-shadow: none;
     }
 
@@ -136,7 +136,7 @@ header {
     }
 
     14% {
-        color: $color-5;
+        color: $color-6;
         text-shadow: none;
     }
 
@@ -145,7 +145,7 @@ header {
     }
 
     19% {
-        color: $color-5;
+        color: $color-6;
         text-shadow: none;
     }
 
@@ -154,12 +154,12 @@ header {
     }
 
     21% {
-        color: $color-5;
+        color: $color-6;
         text-shadow: none;
     }
 
     59% {
-        color: $color-5;
+        color: $color-6;
         text-shadow: none;
     }
 
@@ -168,12 +168,12 @@ header {
     }
 
     61% {
-        color: $color-5;
+        color: $color-6;
         text-shadow: none;
     }
 
     97% {
-        color: $color-5;
+        color: $color-6;
         text-shadow: none;
     }
 
@@ -185,7 +185,7 @@ header {
 
 @keyframes menu {
     0% {
-        color: $color-5;
+        color: $color-6;
         text-shadow: none;
     }
 
@@ -194,7 +194,7 @@ header {
     }
 
     6% {
-        color: $color-5;
+        color: $color-6;
         text-shadow: none;
     }
 
@@ -203,7 +203,7 @@ header {
     }
 
     14% {
-        color: $color-5;
+        color: $color-6;
         text-shadow: none;
     }
 
@@ -212,7 +212,7 @@ header {
     }
 
     19% {
-        color: $color-5;
+        color: $color-6;
         text-shadow: none;
     }
 
@@ -221,12 +221,12 @@ header {
     }
 
     21% {
-        color: $color-5;
+        color: $color-6;
         text-shadow: none;
     }
 
     59% {
-        color: $color-5;
+        color: $color-6;
         text-shadow: none;
     }
 
@@ -239,7 +239,7 @@ header {
     }
 
     97% {
-        color: $color-5;
+        color: $color-6;
         text-shadow: none;
     }
 
@@ -318,7 +318,7 @@ header {
     margin: auto;
     margin-top: -50px;
     padding: 0px;
-    background-color: rgba($color: #000000, $alpha: 3);
+    background-color: black;
     font-weight: 700;
     font-size: 20px;
     z-index: 1;
@@ -335,16 +335,16 @@ header {
         list-style-type: none;
         margin: auto;
         padding: 0px 0px 0px 0px;
-        margin-top: 20px;
-        margin-bottom: 0px;
+        margin-top: 10px;
+        padding-bottom: 10px;
         text-align: center;
         a {
-            font-family: 'Courier New', Courier, monospace;
+            font-family: 'montserrat';
             text-decoration: none;
             margin: auto;
-            color: $color-1;
+            color: $color-3;
             width: 100%;
-            height: 100%;
+            height: auto;
             &:hover {
                 color: $color-4;
                 text-shadow: 1px 1px 3px grey;
@@ -413,9 +413,8 @@ header{
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 10px;
             margin: 0px;
-            padding: 0px;
-            padding-bottom: 10px;
             transition-duration: 300ms;
             z-index: 2;
             background-color: black;
@@ -492,15 +491,15 @@ header{
             list-style-type: none;
             margin: auto;
             padding: 0px 0px 0px 0px;
-            margin-top: 20px;
-            margin-bottom: 0px;
+            margin-top: 10px;
+            padding-bottom: 10px;
             text-align: center;
             width: 40%;
             a {
                 font-family: 'Courier New', Courier, monospace;
                 text-decoration: none;
                 margin: auto;
-                color: $color-1;
+                color: $color-3;
                 width: 100%;
                 height: 100%;
                 &:hover {

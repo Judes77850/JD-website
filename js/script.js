@@ -1,17 +1,13 @@
-// showMenu(menu);
-
 window.addEventListener("scroll", () => {
   const nav = document.getElementById("menuneonlogo");
   let navBar = document.getElementById("bisMenu");
-  const box = document.getElementById("neonlogobox");
-  if (window.scrollY >= 150) {
+  if (window.scrollY >= 128) {
     nav.style.position = "fixed";
     navBar.style.position = "initial";
-  } else if (window.scrollY <= 150) {
+  } else if (window.scrollY <= 128) {
     nav.style.position = "relative";
-    nav.style.backgroundColor = "";
     nav.style.marginTop = "0px";
-  }
+  } 
 });
 
 document.getElementById("btn").addEventListener("click", function () {

@@ -1,31 +1,40 @@
+@import "../Utils/variables";
+
+
+
 #contact-form{
-    background-color: rgba($color: #ffffff, $alpha: 0.3);
-    border-radius: 10px;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     width: 600px;
     padding: 40px;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 50px;
     margin-bottom: 100px;
     input{
         margin: 20px;
-        border-radius: 10px;
+        border-radius: 5px;
         height: 25px;
         text-align: left;
-        border-color: $color-2;
+        border-color: $color-3;
     }
+
+    label{
+        color: $color-6;
+        font-family: "montserrat";
+    }
+
     textarea{
         height: 70px;
         margin: 20px;
         border-radius: 10px;
         text-align: left;
-        border-color: $color-2;
+        border-color: $color-3;
     }
     .send{
         color: $color-1;
         background-color: $color-2;
-        font-family: 'Courier New', Courier, monospace;
+        font-family: 'montserrat';
         font-size: 30px;
         text-align: center;
         font-weight: 700;

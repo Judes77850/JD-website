@@ -15,26 +15,25 @@
 }
 
 @font-face {
+    font-family: montserrat;
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
     font-family: raleway;
     src: url(../fonts/Raleway/static/Raleway-Regular.ttf);
 }
 
 body {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-repeat: unset;
-    justify-content: flex-end;
     color: $color-1;
-    background-color: rgb(14, 14, 14);
-    background-attachment: fixed;
-    background-repeat: repeat;
-    background-size: 100%;
+    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
     text-align: center;
     margin: auto;
+    width: 100%;
     max-width: 1200px;
 }
