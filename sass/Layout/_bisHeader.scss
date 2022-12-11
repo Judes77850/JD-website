@@ -399,6 +399,7 @@ header {
 @media only screen and (max-width: 800px) {
 header{
     width: 100%;
+    background-color: black;
     #neonlogobox{
         width: 100%;
         margin: auto;
@@ -407,7 +408,7 @@ header{
         justify-content: space-between;
         align-items: center;
         background-color: black;
-        margin-top: 0px;
+        margin: 0px;
         #menuneonlogo{
             max-width: 100%;
             display: flex;

@@ -843,6 +843,7 @@ header .neonlogo .acch1 {
 @media only screen and (max-width: 800px) {
   header {
     width: 100%;
+    background-color: black;
   }
   header #neonlogobox {
     width: 100%;
@@ -852,7 +853,7 @@ header .neonlogo .acch1 {
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    margin-top: 0px;
+    margin: 0px;
   }
   header #neonlogobox #menuneonlogo {
     max-width: 100%;
