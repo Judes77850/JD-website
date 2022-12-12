@@ -316,7 +316,7 @@ header .neonlogo {
   border-radius: 10px;
   box-shadow: 2px 2px 10px grey;
   padding: 0px;
-  width: 60%;
+  width: 90%;
   max-height: 100px;
   margin: auto;
   margin-top: 30px;
@@ -681,7 +681,7 @@ header .neonlogo .acch1 {
   z-index: 3;
 }
 #neonlogobox #menuFixed #menuneonlogo {
-  width: 100%;
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -862,11 +862,17 @@ header .neonlogo .acch1 {
     background-color: black;
     margin: 0px;
   }
+  header #neonlogobox .neonlogo {
+    width: 90%;
+  }
+  header #neonlogobox .neonlogo .acch1 {
+    font-size: 14px;
+  }
   header #neonlogobox #menuFixed {
     width: 100%;
   }
   header #neonlogobox #menuFixed #menuneonlogo {
-    max-width: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -885,12 +891,6 @@ header .neonlogo .acch1 {
     -webkit-animation: menu 500ms;
             animation: menu 500ms;
     color: rgb(225, 185, 75);
-  }
-  header #neonlogobox #menuFixed .neonlogo {
-    width: 90%;
-  }
-  header #neonlogobox #menuFixed .neonlogo .acch1 {
-    font-size: 16px;
   }
   header #neonlogobox #menuFixed #btn {
     background-color: transparent;
@@ -912,7 +912,7 @@ header .neonlogo .acch1 {
     color: rgb(0, 163, 220);
     border: none;
     font-size: 25px;
-    margin-left: -30px;
+    margin-left: -18px;
     z-index: 1;
     -webkit-animation: btnMenuOpen 500ms;
             animation: btnMenuOpen 500ms;
