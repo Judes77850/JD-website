@@ -681,12 +681,12 @@ header .neonlogo .acch1 {
   z-index: 3;
 }
 #neonlogobox #menuFixed #menuneonlogo {
-  width: 60%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   transition-duration: 300ms;
-  padding: 10px;
+  padding: 10px 0px 10px 0px;
   margin: 0px;
   z-index: 2;
   background-color: black;
@@ -1041,11 +1041,13 @@ header .neonlogo .acch1 {
   }
 }
 .lastProdBox {
+  margin: auto;
+  width: 90%;
+  background-size: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 100%;
-  background-color: rgb(255, 255, 255);
+  border-radius: 40px;
 }
 .lastProdBox h2 {
   text-align: left;
@@ -1069,28 +1071,28 @@ header .neonlogo .acch1 {
   margin-bottom: 100px;
 }
 .lastProdBox .contentPart .lastprod {
-  box-shadow: rgb(209, 209, 209) 1px 1px 20px;
-  border: solid 1px rgb(245, 245, 245);
   border-radius: 10px;
   width: 25%;
   min-width: 300px;
-  height: auto;
-  transition-duration: 100ms;
+  height: 400px;
+  transition-duration: 200ms;
   opacity: 0;
   display: flex;
   flex-direction: column-reverse;
   justify-content: flex-start;
-  margin: 0px;
+  margin: 20px;
   margin-bottom: 20px;
   padding-bottom: 0px;
+  box-shadow: rgb(215, 215, 215) 1px 1px 20px;
 }
 .lastProdBox .contentPart .lastprod:hover {
-  transform: scale(1.01);
+  box-shadow: rgb(192, 192, 192) 1px 1px 20px;
+  transition-duration: 200ms;
 }
 .lastProdBox .contentPart .lastprod .logobox {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
   width: 100%;
-  height: 70%;
+  height: 60%;
   margin: auto;
   padding: 0px;
   border-radius: 8px 8px 0px 0px;
@@ -1105,7 +1107,8 @@ header .neonlogo .acch1 {
 .lastProdBox .contentPart .lastprod .textpart {
   color: rgb(154, 154, 154);
   font-weight: 600;
-  height: 30%;
+  height: 40%;
+  padding: 10px;
   display: flex;
   border-radius: 0px 0px 10px 10px;
   flex-direction: column;
@@ -1113,6 +1116,27 @@ header .neonlogo .acch1 {
   align-items: center;
   background-color: rgb(14, 14, 14);
   font-family: "montserrat";
+}
+.lastProdBox .contentPart .lastprod .textpart .moreOpt {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.lastProdBox .contentPart .lastprod .textpart .moreOpt a {
+  color: rgb(245, 245, 245);
+  text-decoration: none;
+  background-color: rgb(225, 185, 75);
+  padding: 5px;
+  border-radius: 3px;
+  margin-bottom: -20px;
+  margin-right: 0px;
+}
+.lastProdBox .contentPart .lastprod .textpart .moreOpt .fa-plus {
+  color: white;
+  background-color: rgb(0, 163, 220);
+  padding: 10px;
+  border-radius: 3px;
+  margin-left: -25px;
 }
 .lastProdBox .contentPart .lastprod1 {
   -webkit-animation: lastprod 1000ms;
@@ -1125,28 +1149,12 @@ header .neonlogo .acch1 {
 .lastProdBox .contentPart .lastprod2 {
   -webkit-animation: lastprod 1000ms;
           animation: lastprod 1000ms;
-  -webkit-animation-delay: 700ms;
-          animation-delay: 700ms;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-.lastProdBox .contentPart .lastprod3 {
-  -webkit-animation: lastprod 1000ms;
-          animation: lastprod 1000ms;
   -webkit-animation-delay: 800ms;
           animation-delay: 800ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
-.lastProdBox .contentPart .lastprod4 {
-  -webkit-animation: lastprod 1000ms;
-          animation: lastprod 1000ms;
-  -webkit-animation-delay: 900ms;
-          animation-delay: 900ms;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-.lastProdBox .contentPart .lastprod5 {
+.lastProdBox .contentPart .lastprod3 {
   -webkit-animation: lastprod 1000ms;
           animation: lastprod 1000ms;
   -webkit-animation-delay: 1000ms;
@@ -1154,11 +1162,27 @@ header .neonlogo .acch1 {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
+.lastProdBox .contentPart .lastprod4 {
+  -webkit-animation: lastprod 1000ms;
+          animation: lastprod 1000ms;
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.lastProdBox .contentPart .lastprod5 {
+  -webkit-animation: lastprod 1000ms;
+          animation: lastprod 1000ms;
+  -webkit-animation-delay: 1400ms;
+          animation-delay: 1400ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
 .lastProdBox .contentPart .lastprod6 {
   -webkit-animation: lastprod 1000ms;
           animation: lastprod 1000ms;
-  -webkit-animation-delay: 1100ms;
-          animation-delay: 1100ms;
+  -webkit-animation-delay: 1600ms;
+          animation-delay: 1600ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -1179,7 +1203,62 @@ header .neonlogo .acch1 {
   }
 }
 
-@media only screen and (max-width: 800px) {
+.presentation {
+  margin-bottom: 80px;
+}
+.presentation .lastReal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: rgb(154, 154, 154);
+  font-size: 14px;
+  text-align: left;
+  font-family: "montserrat";
+}
+.presentation .lastReal .titlePart {
+  margin: 20px;
+}
+.presentation .lastReal .contentPart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 100px;
+}
+.presentation .lastReal .contentPart .lastprodMini {
+  width: 25%;
+  padding: 40px;
+  -webkit-animation: lastProd 1000ms;
+          animation: lastProd 1000ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.presentation .lastReal .contentPart .lastprodMini img {
+  width: 250px;
+  transition-duration: 300ms;
+}
+
+@-webkit-keyframes lastProd {
+  0% {
+    translate: -400%;
+    opacity: 0;
+  }
+  100% {
+    translate: 5%;
+  }
+}
+
+@keyframes lastProd {
+  0% {
+    translate: -400%;
+    opacity: 0;
+  }
+  100% {
+    translate: 5%;
+  }
+}
+@media only screen and (max-width: 768px) {
   .lastProdBox {
     display: flex;
     flex-direction: column;
@@ -1221,14 +1300,10 @@ header .neonlogo .acch1 {
     flex-direction: column-reverse;
     justify-content: flex-start;
     margin: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     padding-bottom: 0px;
   }
-  .lastProdBox .contentPart .lastprod:hover {
-    transform: scale(1.01);
-  }
   .lastProdBox .contentPart .lastprod .logobox {
-    background-color: white;
     width: auto;
     height: 60%;
     margin: auto;
@@ -1239,7 +1314,7 @@ header .neonlogo .acch1 {
     align-items: center;
   }
   .lastProdBox .contentPart .lastprod .logobox img {
-    width: 40%;
+    width: 35%;
     height: auto;
     margin: 0px;
   }
@@ -1320,7 +1395,7 @@ header .neonlogo .acch1 {
     }
   }
   .presentation {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
   }
   .presentation .lastReal {
     width: 100%;
