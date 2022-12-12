@@ -1,10 +1,26 @@
-.oclink{
+#formation{
+    color: black;
+    font-family: "montserrat";
+    text-align: left;
+    background-color: $color-4;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+a{
+    margin: auto;
+
     img{
-        width: 150px;
+        width: 20%;
+        margin: auto;
     }
 }
 
 .project{
+    color: black;
     max-width: 80%;
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +28,7 @@
 }
 
 .projects{
-    background-color: rgba($color: #f9f9f9, $alpha: 0.3);
+    color: black;
     box-shadow: rgb(198, 198, 198) 3px 3px 30px;
     margin: 15px;
     padding: 10px;

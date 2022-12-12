@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://kit.fontawesome.com/b7690d0649.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../sass/reset.scss" />
-  <link rel="stylesheet" href="../css/main.min.css" />
+  <link rel="stylesheet" href="../sass/main.css" />
   <script src="../js/script.js" defer></script>
   <title>JD Web-Site</title>
 </head>
@@ -19,28 +19,24 @@
         <h1>Julien Desaindes</h1>
         <p class="acch1">Developpeur WEB junior</p>
       </div>
+    <div id="menuFixed">
       <div id="menuneonlogo">
         <span class="menulogo"><a href="../index.html"><i class="fa-solid fa-house"></i></a></span>
-        <button id="btn" aria-label="toggle curtain navigation"><i class="fa-solid fa-bars"></i></button>
-        <span class="menulogo"><a href="contact.html"><i class="fa-solid fa-phone"></i></a></span>
+        <button id="btn" aria-label="toggle curtain navigation"><i class="fa-solid fa-bars" id="btnMenu"></i></button>
+        <button id="btnClose"><i class="fa-regular fa-circle-xmark" id="btnClose"></i></button>
+        <span class="menulogo"><a href="./contact.html"><i class="fa-solid fa-phone"></i></a></span>
+      </div>
+      <div id="bisMenu">
+        <ul>
+          <li>
+            <a href="html/formation.html">Formation</a>
+          </li>
+          <li>
+            <a href="html/projets.html">Projets</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <div id="bisMenu">
-      <ul>
-        <li>
-          <a href="../index.html">Accueil</a>
-        </li>
-        <li>
-          <a href="html/formation.html">Formation</a>
-        </li>
-        <li>
-          <a href="html/projets.html">Projets</a>
-        </li>
-        <li>
-          <a href="html/contact.html">Contact</a>
-        </li>
-        <button id="close"><i class="fa-regular fa-circle-xmark"></i></button>
-      </ul>
     </div>
   </header>
   <main>
@@ -49,20 +45,10 @@
       <p>Formation de developpeur web chez Openclassrooms.</p></br>
       <p>Technologies maitrisées:</br></br>HTML, CSS, JavaScript, React, Git/GitHub, NodeJS, Express, MongoDB, les API
         REST</p>
-      <p>Cette formation se comporte plusieurs projets profesionnalisants que voici :</p>
-      <div class="project">
-        <div class="projects">Créez la page d'accueil d'une agence de voyage avec HTML & CSS
-          Démarrez sur HTML et CSS en intégrant la page Web de Booki, une plateforme de réservation de vacances.</div>
-        <div class="projects">Dynamisez une page web avec des animations pour une jeune startup qui voudrait s'imposer
-          sur le marché de la restauration CSS</div>
-        <div class="projects"></div>
-        <div class="projects"></div>
-        <div class="projects"></div>
-        <div class="projects"></div>
-      </div>
-      <span class="oclink"><a href="https://openclassrooms.com/fr/paths/717-developpeur-web"
+      <p>Cette formation se comporte plusieurs projets profesionnalisants</p>
+      <a href="https://openclassrooms.com/fr/paths/717-developpeur-web"
           alt="site web openclassrooms"><img src="../img/Logo_OpenClassrooms.png"
-            alt="logo Openclassrooms" /></a></span>
+            alt="logo Openclassrooms" /></a>
     </div>
   </main>
   <footer>

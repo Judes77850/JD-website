@@ -34,6 +34,7 @@
             min-width: 300px;
             height: auto;
             transition-duration: 100ms;
+            opacity: 0;
             display: flex;
             flex-direction: column-reverse;
             justify-content: flex-start;
@@ -41,9 +42,6 @@
             margin-bottom: 20px;
             padding-bottom: 0px;
             &:hover {
-                animation: content 400ms;
-                border-color: $color-4;
-                box-shadow: $color-4 1px 1px 15px;
                 transform: scale(1.01);
             }
             .logobox {
@@ -73,65 +71,50 @@
                 align-items: center;
                 background-color: rgb(14, 14, 14);
                 font-family: 'montserrat';
-    
             }
         }
-        
+        .lastprod1{
+            animation: lastprod 1000ms;
+            animation-delay: 600ms;
+            animation-fill-mode: forwards;
+        }
+        .lastprod2{
+            animation: lastprod 1000ms;
+            animation-delay: 700ms;
+            animation-fill-mode: forwards;
+        }
+        .lastprod3{
+            animation: lastprod 1000ms;
+            animation-delay: 800ms;
+            animation-fill-mode: forwards;
+        }
+        .lastprod4{
+            animation: lastprod 1000ms;
+            animation-delay: 900ms;
+            animation-fill-mode: forwards;
+        }
+        .lastprod5{
+            animation: lastprod 1000ms;
+            animation-delay: 1000ms;
+            animation-fill-mode: forwards;
+        }
+        .lastprod6{
+            animation: lastprod 1000ms;
+            animation-delay: 1100ms;
+            animation-fill-mode: forwards;
+        }
+        @keyframes lastprod{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
     }
-    
 }
 
-@keyframes content {
-    0% {
-        border-color: $color-5;
-        box-shadow: none;
-    }
-    5% {
-        border-color: $color-4;
-    }
-    6% {
-        border-color: $color-5;
-        box-shadow: none;
-    }
-    7% {
-        border-color: $color-4;
-    }
-    14% {
-        border-color: $color-5;
-        box-shadow: none;
-    }
-    15% {
-        border-color: $color-4;
-    }
-    19% {
-        border-color: $color-5;
-        box-shadow: none;
-    }
-    20% {
-        border-color: $color-4;
-    }
-    21% {
-        border-color: $color-5;
-        box-shadow: none;
-    }
-    59% {
-        border-color: $color-5;
-        box-shadow: none;
-    }
-    60% {
-        border-color: $color-4;
-    }
-    61% {
-        border-color: $color-4;
-    }
-    97% {
-        border-color: $color-5;
-        box-shadow: none;
-    }
-    100% {
-        border-color: $color-4;
-    }
-}
+
 
 @media only screen and (max-width: 800px) {
     .lastProdBox {
@@ -142,7 +125,7 @@
         background-color: $color-1;
         h2 {
             text-align: left;
-            font-size: 25px;
+            font-size: 17px;
             font-weight: 900;
             color: $color-3;
             font-family: "montserrat";
@@ -167,7 +150,8 @@
                 width: 90%;
                 min-width: 300px;
                 height: 250px;
-                transition-duration: 100ms;
+                opacity: 0;
+                transition-duration: 500ms;
                 display: flex;
                 flex-direction: column-reverse;
                 justify-content: flex-start;
@@ -175,9 +159,6 @@
                 margin-bottom: 20px;
                 padding-bottom: 0px;
                 &:hover {
-                    animation: content 400ms;
-                    border-color: $color-4;
-                    box-shadow: $color-4 1px 1px 15px;
                     transform: scale(1.01);
                 }
                 .logobox {
@@ -210,60 +191,46 @@
                     font-size: 14px;
                 }
             }
+            .lastprod1{
+                animation: lastprod 1000ms;
+                animation-delay: 600ms;
+                animation-fill-mode: forwards;
+            }
+            .lastprod2{
+                animation: lastprod 1000ms;
+                animation-delay: 700ms;
+                animation-fill-mode: forwards;
+            }
+            .lastprod3{
+                animation: lastprod 1000ms;
+                animation-delay: 800ms;
+                animation-fill-mode: forwards;
+            }
+            .lastprod4{
+                animation: lastprod 1000ms;
+                animation-delay: 900ms;
+                animation-fill-mode: forwards;
+            }
+            .lastprod5{
+                animation: lastprod 1000ms;
+                animation-delay: 1000ms;
+                animation-fill-mode: forwards;
+            }
+            .lastprod6{
+                animation: lastprod 1000ms;
+                animation-delay: 1100ms;
+                animation-fill-mode: forwards;
+            }
+            @keyframes lastprod{
+                0%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                }
+            }
             
         }
         
-    }
-    
-    @keyframes content {
-        0% {
-            border-color: $color-5;
-            box-shadow: none;
-        }
-        5% {
-            border-color: $color-4;
-        }
-        6% {
-            border-color: $color-5;
-            box-shadow: none;
-        }
-        7% {
-            border-color: $color-4;
-        }
-        14% {
-            border-color: $color-5;
-            box-shadow: none;
-        }
-        15% {
-            border-color: $color-4;
-        }
-        19% {
-            border-color: $color-5;
-            box-shadow: none;
-        }
-        20% {
-            border-color: $color-4;
-        }
-        21% {
-            border-color: $color-5;
-            box-shadow: none;
-        }
-        59% {
-            border-color: $color-5;
-            box-shadow: none;
-        }
-        60% {
-            border-color: $color-4;
-        }
-        61% {
-            border-color: $color-4;
-        }
-        97% {
-            border-color: $color-5;
-            box-shadow: none;
-        }
-        100% {
-            border-color: $color-4;
-        }
     }
 }

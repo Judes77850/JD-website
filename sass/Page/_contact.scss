@@ -6,22 +6,23 @@
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    width: 600px;
-    padding: 40px;
+    width: 70%;
+    max-width: 600px;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 100px;
     input{
-        margin: 20px;
-        border-radius: 5px;
+        margin: 10px;
+        border-radius: 8px;
         height: 25px;
         text-align: left;
-        border-color: $color-3;
+        border-color: none;
     }
 
     label{
         color: $color-6;
         font-family: "montserrat";
+        margin-top: 30px;
     }
 
     textarea{
@@ -35,11 +36,11 @@
         color: $color-1;
         background-color: $color-2;
         font-family: 'montserrat';
-        font-size: 30px;
+        font-size: 20px;
         text-align: center;
         font-weight: 700;
-        height: 50px;
-        width: 180px;
+        height: 30px;
+        width: 140px;
         margin: auto;
         margin-bottom: 30px;
         margin-top: 40px;
