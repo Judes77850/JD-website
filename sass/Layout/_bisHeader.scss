@@ -259,107 +259,117 @@ header {
     align-items: center;
     background-color: black;
     margin-top: 0px;
-    #menuneonlogo{
-        width: 100%;
+    #menuFixed{
         display: flex;
+        width: 100%;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        transition-duration: 300ms;
-        padding: 10px;
-        margin: 0px;
-        z-index: 2;
-        background-color: black;
-        a{
+        z-index: 3;
+        #menuneonlogo{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition-duration: 300ms;
+            padding: 10px;
+            margin: 0px;
+            z-index: 2;
+            background-color: black;
+            a{
+                color: $color-2;
+                margin: 100px;
+                :hover{
+                    animation: menu 500ms;
+                    color: $color-4;
+                }
+            }
+        }
+        #btn{
+            background-color: transparent;
             color: $color-2;
-            margin: 100px;
+            border: none;
+            font-size: 25px;
+            z-index: 2;
+            background-color: black;
+            animation: btnMenuOpen 500ms;
             :hover{
                 animation: menu 500ms;
                 color: $color-4;
             }
         }
-    }
-    #btn{
-        background-color: transparent;
-        color: $color-2;
-        border: none;
-        font-size: 25px;
-        z-index: 2;
-        background-color: black;
-        animation: btnMenuOpen 500ms;
-        :hover{
-            animation: menu 500ms;
-            color: $color-4;
-        }
-    }
-    #btnClose{
-        background-color: transparent;
-        color: $color-2;
-        border: none;
-        font-size: 25px;
-        margin-left: -18px;
-        z-index: 1;
-        animation: btnMenuOpen 500ms;
-        :hover{
-            animation: menu 500ms;
-            color: $color-4;
-        }
-    }
-    .menulogo{
-        color: $color-2;
-        font-size: 25px;
-        z-index: 2;
-    }
-}
-
-#bisMenu {
-    width: 100%;
-    max-width: 1200px;
-    height: 50px;
-    margin: auto;
-    margin-top: -50px;
-    padding: 0px;
-    background-color: black;
-    font-weight: 700;
-    font-size: 20px;
-    z-index: 1;
-    ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    margin: 0px;
-    text-align: center;
-    }
-    li {
-        list-style-type: none;
-        margin: auto;
-        padding: 0px 0px 0px 0px;
-        margin-top: 10px;
-        padding-bottom: 10px;
-        text-align: center;
-        a {
-            font-family: 'montserrat';
-            text-decoration: none;
-            margin: auto;
-            color: $color-3;
-            width: 100%;
-            height: auto;
-            &:hover {
-                color: $color-4;
-                text-shadow: 1px 1px 3px grey;
+        #btnClose{
+            background-color: transparent;
+            color: $color-2;
+            border: none;
+            font-size: 25px;
+            margin-left: -18px;
+            z-index: 1;
+            animation: btnMenuOpen 500ms;
+            :hover{
                 animation: menu 500ms;
-                animation-iteration-count: 1;
+                color: $color-4;
+            }
+        }
+        .menulogo{
+            color: $color-2;
+            font-size: 25px;
+            z-index: 2;
+        }
+        #bisMenu {
+            width: 100%;
+            max-width: 1200px;
+            height: 50px;
+            margin: auto;
+            margin-top: -50px;
+            padding: 0px;
+            background-color: black;
+            font-weight: 700;
+            font-size: 20px;
+            z-index: 1;
+            ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            margin: 0px;
+            text-align: center;
+            }
+            li {
+                list-style-type: none;
+                margin: auto;
+                padding: 0px 0px 0px 0px;
+                margin-top: 10px;
+                padding-bottom: 10px;
+                text-align: center;
+                a {
+                    font-family: 'montserrat';
+                    text-decoration: none;
+                    margin: auto;
+                    color: $color-3;
+                    width: 100%;
+                    height: auto;
+                    &:hover {
+                        color: $color-4;
+                        text-shadow: 1px 1px 3px grey;
+                        animation: menu 500ms;
+                        animation-iteration-count: 1;
+                    }
+                }
+            }
+            i{
+                font-size: 25px;
+                margin: 15px;
+                color: $color-2;
+                animation: menu 500ms;
             }
         }
     }
-    i{
-        font-size: 25px;
-        margin: 15px;
-        color: $color-2;
-        animation: menu 500ms;
-    }
 }
+    
+
+
 
 @keyframes bisMenuOpen {
     0% {
@@ -409,115 +419,123 @@ header{
         align-items: center;
         background-color: black;
         margin: 0px;
-        #menuneonlogo{
-            max-width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px;
-            margin: 0px;
-            transition-duration: 300ms;
-            z-index: 2;
-            background-color: black;
-            a{
+        #menuFixed{
+            width: 100%;
+            #menuneonlogo{
+                max-width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                margin: 0px;
+                transition-duration: 300ms;
+                z-index: 2;
+                background-color: black;
+                a{
+                    color: $color-2;
+                    margin: 30px;
+                    background-color: black;
+                    :hover{
+                        animation: menu 500ms;
+                        color: $color-4;
+                    }
+                }
+            }
+            .neonlogo{
+                width: 90%;
+                .acch1{
+                    font-size: 16px;
+    
+                }
+            }
+            #btn{
+                background-color: transparent;
                 color: $color-2;
-                margin: 30px;
+                border: none;
+                font-size: 25px;
+                z-index: 2;
+                background-color: black;
+                animation: btnMenuOpen 500ms;
                 :hover{
                     animation: menu 500ms;
                     color: $color-4;
                 }
             }
-        }
-        .neonlogo{
-            width: 90%;
-            .acch1{
-                font-size: 16px;
-
-            }
-        }
-        #btn{
-            background-color: transparent;
-            color: $color-2;
-            border: none;
-            font-size: 25px;
-            z-index: 2;
-            background-color: black;
-            animation: btnMenuOpen 500ms;
-            :hover{
-                animation: menu 500ms;
-                color: $color-4;
-            }
-        }
-        #btnClose{
-            background-color: transparent;
-            color: $color-2;
-            border: none;
-            font-size: 25px;
-            margin-left: -18px;
-            z-index: 1;
-            animation: btnMenuOpen 500ms;
-            :hover{
-                animation: menu 500ms;
-                color: $color-4;
-            }
-        }
-        .menulogo{
-            color: $color-2;
-            font-size: 25px;
-            z-index: 2;
-        }
-    }
-    
-    #bisMenu {
-        width: 100%;
-        max-width: 1200px;
-        height: 50px;
-        margin: auto;
-        margin-top: -50px;
-        padding: 0px;
-        background-color: rgba($color: #000000, $alpha: 3);
-        font-weight: 700;
-        font-size: 20px;
-        z-index: 1;
-        ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 0px;
-        margin: 0px;
-        text-align: center;
-        }
-        li {
-            list-style-type: none;
-            margin: auto;
-            padding: 0px 0px 0px 0px;
-            margin-top: 10px;
-            padding-bottom: 10px;
-            text-align: center;
-            width: 40%;
-            a {
-                font-family: 'Courier New', Courier, monospace;
-                text-decoration: none;
-                margin: auto;
-                color: $color-3;
-                width: 100%;
-                height: 100%;
-                &:hover {
-                    color: $color-4;
-                    text-shadow: 1px 1px 3px grey;
+            #btnClose{
+                background-color: transparent;
+                color: $color-2;
+                border: none;
+                font-size: 25px;
+                margin-left: -18px;
+                z-index: 1;
+                animation: btnMenuOpen 500ms;
+                :hover{
                     animation: menu 500ms;
-                    animation-iteration-count: 1;
+                    color: $color-4;
                 }
             }
+            .menulogo{
+                color: $color-2;
+                font-size: 25px;
+                z-index: 2;
+            }
+            #bisMenu {
+                width: 100%;
+                max-width: 1200px;
+                height: 50px;
+                margin: auto;
+                margin-top: -50px;
+                padding: 0px;
+                background-color: rgba($color: #000000, $alpha: 3);
+                font-weight: 700;
+                font-size: 20px;
+                z-index: 1;
+                ul{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                padding: 0px;
+                margin: 0px;
+                text-align: center;
+                }
+                li {
+                    list-style-type: none;
+                    margin: auto;
+                    padding: 0px 0px 0px 0px;
+                    margin-top: 10px;
+                    padding-bottom: 10px;
+                    text-align: center;
+                    min-width: 50%;
+                    a {
+                        font-family: 'montserrat';
+                        text-decoration: none;
+                        margin: auto;
+                        color: $color-3;
+                        width: 100%;
+                        height: 100%;
+                        &:hover {
+                            color: $color-4;
+                            text-shadow: 1px 1px 3px grey;
+                            animation: menu 500ms;
+                            animation-iteration-count: 1;
+                        }
+                    }
+                }
+                i{
+                    font-size: 25px;
+                    margin: 15px;
+                    color: $color-2;
+                    animation: menu 500ms;
+                }
+            }
+
         }
-        i{
-            font-size: 25px;
-            margin: 15px;
-            color: $color-2;
-            animation: menu 500ms;
-        }
+        
     }
+    
+    
     
     @keyframes bisMenuOpen {
         0% {
