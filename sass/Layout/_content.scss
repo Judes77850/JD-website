@@ -233,4 +233,51 @@
         }
         
     }
+    .presentation{
+        margin-bottom: 60px;
+        .lastReal{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            color: $color-3;
+            font-size: 14px;
+            text-align: left;
+            font-family: "montserrat";
+            .contentPart{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                .lastprodMini{
+                    width: 15%;
+                    padding: 30px;
+                    animation: lastProd 1000ms;
+                    animation-fill-mode: forwards;
+                    
+                    z-index: 10;
+                    img{
+                        width: 100px;
+                        transition-duration: 300ms;
+                    }
+                    :hover{
+                        transform: scale(1.1);
+                        transition-duration: 300ms;
+                    }
+                }
+            }
+            }
+    }
+
+    @keyframes lastProd {
+        0%{
+            translate: -400%;
+            opacity: 0;
+        }
+
+        100%{
+            translate: -15%;
+        }
+        
+    }
 }

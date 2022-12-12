@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://kit.fontawesome.com/b7690d0649.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../sass/reset.scss" />
-  <link rel="stylesheet" href="../css/main.min.css" />
+  <link rel="stylesheet" href="../sass/main.css" />
   <script src="../js/script.js" defer></script>
   <title>JD Web-Site</title>
 </head>
@@ -19,30 +19,108 @@
         <h1>Julien Desaindes</h1>
         <p class="acch1">Developpeur WEB junior</p>
       </div>
+    <div id="menuFixed">
       <div id="menuneonlogo">
         <span class="menulogo"><a href="../index.html"><i class="fa-solid fa-house"></i></a></span>
-        <button id="btn" aria-label="toggle curtain navigation"><i class="fa-solid fa-bars"></i></button>
-        <span class="menulogo"><a href="contact.html"><i class="fa-solid fa-phone"></i></a></span>
+        <button id="btn" aria-label="toggle curtain navigation"><i class="fa-solid fa-bars" id="btnMenu"></i></button>
+        <button id="btnClose"><i class="fa-regular fa-circle-xmark" id="btnClose"></i></button>
+        <span class="menulogo"><a href="./contact.html"><i class="fa-solid fa-phone"></i></a></span>
+      </div>
+      <div id="bisMenu">
+        <ul>
+          <li>
+            <a href="formation.html">Formation</a>
+          </li>
+          <li>
+            <a href="projets.html">Projets</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <div id="bisMenu">
-      <ul>
-        <li>
-          <a href="../index.html">Accueil</a>
-        </li>
-        <li>
-          <a href="html/formation.html">Formation</a>
-        </li>
-        <li>
-          <a href="html/projets.html">Projets</a>
-        </li>
-        <li>
-          <a href="html/contact.html">Contact</a>
-        </li>
-        <button id="close"><i class="fa-regular fa-circle-xmark"></i></button>
-      </ul>
     </div>
   </header>
+  <main id="main">
+    <div class="content">
+      <div class="lastProdBox">
+        <div class="titlePart">
+          <h2>Les dernières realisations :</h2>
+        </div>
+        <div class="contentPart">
+        <div class="lastprod lastprod1">
+          <div class="textpart">
+            <p>
+              Projet 6 "Developpeur WEB Openclassrooms"
+            </p>
+            <p>Technos: REACT</p>
+          </div>
+          <div class="logobox">
+            <img src="../img/real/kasa.png" alt="" />
+          </div>
+        </div>
+        <div class="lastprod lastprod2">
+          <div class="textpart">
+            <p>
+              Projet 5 "Developpeur WEB
+              Openclassrooms"
+            </p>
+            <p>Technos: Javascript, HTML, CSS</p>
+          </div>
+          <div class="logobox">
+            <img src="../img/real/piiquante.png" alt="" />
+          </div>
+        </div>
+        <div class="lastprod lastprod3">
+          <div class="textpart">
+            <p>
+              Projet 4 "Developpeur WEB
+              Openclassrooms"
+            </p>
+            <p>Technos: Javascript, HTML, CSS</p>
+          </div>
+          <div class="logobox">
+            <img src="../img/real/kanap.png" alt="" />
+          </div>
+        </div>
+        <div class="lastprod lastprod4">
+          <div class="textpart">
+            <p>
+              Projet 3 "Developpeur WEB
+              Openclassrooms"
+            </p>
+            <p>Audit SEO, optimisation, reférencement</p>
+          </div>
+          <div class="logobox">
+            <img src="../img/real/panthere.png" alt="" />
+          </div>
+        </div>
+        <div class="lastprod lastprod5">
+          <div class="textpart">
+            <p>
+              Projet 2 "Developpeur WEB
+              Openclassrooms"
+            </p>
+            <p>Technos: Sass, HTML, CSS</p>
+          </div>
+          <div class="logobox">
+            <img src="../img/real/ohmyfood.png" alt="" />
+          </div>
+        </div>
+        <div class="lastprod lastprod6">
+          <div class="textpart">
+            <p>
+              Projet 1 "Developpeur WEB
+              Openclassrooms"
+            </p>
+            <p>Technos: HTML, CSS</p>
+          </div>
+          <div class="logobox">
+            <img src="../img/real/bookiblanc.png" alt="" />
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </main>
   <footer>
     <p>Retrouvez-moi sur ces reseaux :</p>
     <div id="socialBox">
