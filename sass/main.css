@@ -1014,17 +1014,20 @@ header .neonlogo .acch1 {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  margin: auto;
+  width: 90%;
+  box-shadow: rgb(223, 223, 223) 2px 2px 10px;
+  border-radius: 30px;
+  -webkit-animation: lastProd 1000ms ease-in;
+          animation: lastProd 1000ms ease-in;
 }
 .presentation .lastReal .contentPart .lastprodMini {
   padding: 0px;
   margin: 0px;
-  -webkit-animation: lastProd 1000ms ease-in;
-          animation: lastProd 1000ms ease-in;
 }
 .presentation .lastReal .contentPart .lastprodMini img {
   width: 200px;
-  padding: 50px;
+  padding: 30px;
   transition-duration: 300ms;
 }
 
@@ -1100,14 +1103,10 @@ header .neonlogo .acch1 {
     width: 90%;
     min-width: 300px;
     height: 250px;
-    opacity: 0;
     -webkit-animation: lastprod 1000ms;
             animation: lastprod 1000ms;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-start;
     margin: 0px;
     margin-bottom: 40px;
     padding-bottom: 0px;
@@ -1225,14 +1224,17 @@ header .neonlogo .acch1 {
     align-items: center;
     margin: auto;
     width: 90%;
-  }
-  .presentation .lastReal .contentPart .lastprodMini {
-    width: 15%;
-    padding: 30px;
+    box-shadow: rgb(223, 223, 223) 2px 2px 10px;
+    border-radius: 10px;
     -webkit-animation: lastProd 1000ms ease-in;
             animation: lastProd 1000ms ease-in;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
+  }
+  .presentation .lastReal .contentPart .lastprodMini {
+    width: 30%;
+    margin: auto;
+    padding: 10px;
   }
   .presentation .lastReal .contentPart .lastprodMini img {
     width: 100px;
@@ -1247,7 +1249,7 @@ header .neonlogo .acch1 {
       translate: 5%;
     }
     100% {
-      translate: -20%;
+      translate: 0%;
     }
   }
   @keyframes lastProd {
@@ -1258,7 +1260,7 @@ header .neonlogo .acch1 {
       translate: 5%;
     }
     100% {
-      translate: -20%;
+      translate: 0%;
     }
   }
 }
