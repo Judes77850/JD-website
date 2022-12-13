@@ -1,22 +1,39 @@
 #formation{
-    color: black;
+    color: $color-6;
     font-family: "montserrat";
     text-align: left;
-    background-color: $color-4;
-    width: 90%;
+    background-color: white;
+    text-align: center;
+    box-shadow: rgb(198, 198, 198) 3px 3px 30px;
+    width: 80%;
     margin: auto;
     margin-top: 30px;
-    padding: 10px;
+    padding: 0px;
     border-radius: 15px;
-}
-
-a{
-    margin: auto;
-    img{
-        width: 20%;
+    h3{
+        width: 100%;
+        font-family: "montserrat";
+        background-color: $color-2;
+        color: white;
+        text-align: center;
+        padding: 0px;
+        border-radius: 12px 12px 0px 0px;
         margin: auto;
     }
+    a{
+        display: flex;
+        margin: auto;
+        cursor: pointer;
+        img{
+            width: 30%;
+            max-width: 150px;
+            margin: auto;
+            margin-bottom: 10px;
+            border-radius: 13px;
+        }
+    }
 }
+
 
 .project{
     color: black;
