@@ -4,12 +4,12 @@ window.addEventListener("scroll", () => {
   const main = document.getElementById("main");
   if (window.scrollY >= 123) {
     nav.style.position = "fixed";
-    main.style.marginTop = "80px";
+    main.style.marginTop = "60px";
   } else if (window.scrollY <= 123) {
     nav.style.position = "";
     nav.style.marginTop = "0px";
     navBar.style.position = "";
-    main.style.marginTop = "30px";
+    main.style.marginTop = "";
   } 
 });
 
