@@ -146,33 +146,31 @@
         }
         .contentPart{
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            width: 100%;
-            margin-bottom: 100px;
+            width: 400px;
             .lastprodMini{
                 width: 25%;
                 padding: 40px;
-                animation: lastProd 1000ms;
-                animation-fill-mode: forwards;
+                margin: 70px;
+                animation: lastProd 8000ms linear;
+                animation-iteration-count: 4;
                 img{
                     width: 250px;
                     transition-duration: 300ms;
                 }
             }
         }
-        }
+    }
 }
 
 @keyframes lastProd {
     0%{
-        translate: -400%;
-        opacity: 0;
+        translate: -1100%;
     }
-
     100%{
-        translate: 5%;
+        translate: 1100%;
     }
     
 }
@@ -317,14 +315,15 @@
             font-family: "montserrat";
             .contentPart{
                 display: flex;
-                flex-wrap: wrap;
+                flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
-                width: 100%;
+                width: 400px;
                 .lastprodMini{
                     width: 15%;
                     padding: 30px;
-                    animation: lastProd 1000ms;
+                    animation: lastProd 8000ms;
+                    animation-iteration-count: 10;
                     animation-fill-mode: forwards;
                     
                     z-index: 10;
@@ -343,12 +342,14 @@
 
     @keyframes lastProd {
         0%{
-            translate: -400%;
+            translate: -350%;
             opacity: 0;
         }
-
+        50%{
+            translate: 300%;
+        }
         100%{
-            translate: -15%;
+            translate: -350%;
         }
         
     }

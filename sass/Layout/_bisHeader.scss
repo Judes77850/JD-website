@@ -9,7 +9,6 @@ header {
     position: initial;
     top: 0;
     left: 0;
-
     .neonlogo {
         border: solid 3px $color-2;
         border-radius: 10px;
@@ -20,7 +19,6 @@ header {
         margin: auto;
         margin-top: 30px;
         margin-bottom: 10px;
-
         h1 {
             width: 80%;
             padding-top: 10px;
@@ -32,7 +30,6 @@ header {
             font-size: 2rem;
             animation: h1 1500ms;
             animation-iteration-count: 2;
-
         }
         .acch1 {
             margin: auto;
@@ -46,7 +43,6 @@ header {
             animation-delay: 233ms;
         }
     }
-
 }
 
 @keyframes h1 {
@@ -266,49 +262,61 @@ header {
         justify-content: center;
         align-items: center;
         z-index: 3;
-        #menuneonlogo{
+        #menuneonlogoBox{
             width: 100%;
+            background-color: black;
+            z-index: 3;
+            margin: auto;
             display: flex;
             justify-content: center;
-            align-items: center;
-            transition-duration: 300ms;
-            padding: 10px 0px 10px 0px;
-            margin: 0px;
-            z-index: 2;
-            background-color: black;
-            a{
-                color: $color-2;
-                margin: 100px;
-                :hover{
-                    animation: menu 500ms;
-                    color: $color-4;
+            #menuneonlogo{
+                width: 40%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                transition-duration: 300ms;
+                padding: 10px 0px 10px 0px;
+                margin: 0px;
+                z-index: 2;
+                background-color: black;
+                a{
+                    color: $color-2;
+                    :hover{
+                        animation: menu 500ms;
+                        color: $color-4;
+                    }
                 }
-            }
-        }
-        #btn{
-            background-color: transparent;
-            color: $color-2;
-            border: none;
-            font-size: 25px;
-            z-index: 2;
-            background-color: black;
-            animation: btnMenuOpen 500ms;
-            :hover{
-                animation: menu 500ms;
-                color: $color-4;
-            }
-        }
-        #btnClose{
-            background-color: transparent;
-            color: $color-2;
-            border: none;
-            font-size: 25px;
-            margin-left: -18px;
-            z-index: 1;
-            animation: btnMenuOpen 500ms;
-            :hover{
-                animation: menu 500ms;
-                color: $color-4;
+                #interactBtn{
+                    display: flex;
+                    justify-content: center;
+                    width: 80px;
+                    #btn{
+                        background-color: black;
+                        color: $color-2;
+                        border: none;
+                        font-size: 25px;
+                        z-index: 2;
+                        animation: btnMenuOpen 500ms;
+                        animation-fill-mode: forwards;
+                        :hover{
+                            animation: menu 500ms;
+                            color: $color-4;
+                        }
+                    }
+                    #btnClose{
+                        background-color: black;
+                        color: $color-2;
+                        border: none;
+                        font-size: 25px;
+                        margin-left: -17.5px;
+                        z-index: 1;
+                        animation: btnMenuOpen 500ms;
+                        :hover{
+                            animation: menu 500ms;
+                            color: $color-4;
+                        }
+                    }
+                }
             }
         }
         .menulogo{
@@ -400,13 +408,12 @@ header {
         z-index: 1;
     }
     100%{
-        z-index: 1;
-        opacity: 0;
+        z-index: 2;
     }
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
 header{
     width: 100%;
     background-color: black;
@@ -437,10 +444,9 @@ header{
                 margin: 0px;
                 transition-duration: 300ms;
                 z-index: 2;
-                background-color: black;
+                background-color: red;
                 a{
                     color: $color-2;
-                    margin: 30px;
                     background-color: black;
                     :hover{
                         animation: menu 500ms;
@@ -448,126 +454,11 @@ header{
                     }
                 }
             }
-            #btn{
-                background-color: transparent;
-                color: $color-2;
-                border: none;
-                font-size: 25px;
-                z-index: 2;
-                background-color: black;
-                animation: btnMenuOpen 500ms;
-                :hover{
-                    animation: menu 500ms;
-                    color: $color-4;
-                }
-            }
-            #btnClose{
-                background-color: transparent;
-                color: $color-2;
-                border: none;
-                font-size: 25px;
-                margin-left: -18px;
-                z-index: 1;
-                animation: btnMenuOpen 500ms;
-                :hover{
-                    animation: menu 500ms;
-                    color: $color-4;
-                }
-            }
             .menulogo{
                 color: $color-2;
                 font-size: 25px;
                 z-index: 2;
             }
-            #bisMenu {
-                width: 100%;
-                max-width: 1200px;
-                height: 50px;
-                margin: auto;
-                margin-top: -50px;
-                padding: 0px;
-                background-color: rgba($color: #000000, $alpha: 3);
-                font-weight: 700;
-                font-size: 17px;
-                z-index: 1;
-                ul{
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-                padding: 0px;
-                margin: 0px;
-                text-align: center;
-                }
-                li {
-                    list-style-type: none;
-                    margin: auto;
-                    padding: 0px 0px 0px 0px;
-                    margin-top: 10px;
-                    padding-bottom: 10px;
-                    text-align: center;
-                    min-width: 50%;
-                    a {
-                        font-family: 'montserrat';
-                        text-decoration: none;
-                        margin: auto;
-                        color: $color-3;
-                        width: 100%;
-                        height: 100%;
-                        &:hover {
-                            color: $color-4;
-                            text-shadow: 1px 1px 3px grey;
-                            animation: menu 500ms;
-                            animation-iteration-count: 1;
-                        }
-                    }
-                }
-                i{
-                    font-size: 25px;
-                    margin: 15px;
-                    color: $color-2;
-                    animation: menu 500ms;
-                }
-            }
-
-        }
-        
-    }
-    
-    
-    
-    @keyframes bisMenuOpen {
-        0% {
-            margin-top: -50px;
-        }
-        100%{
-            margin-top: 0px;
-        }
-    
-    }
-    
-    @keyframes bisMenuClose {
-        0% {
-            margin-top: 0px;
-        }
-        100%{
-            margin-top: -50px;
-        }
-    
-    }
-    
-    @keyframes btnMenuOpen {
-        0% {
-            font-size:25px;
-        }
-        90%{
-            font-size: 25px;
-            z-index: 1;
-        }
-        100%{
-            z-index: 1;
-            opacity: 0;
         }
     }
 }

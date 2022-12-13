@@ -680,10 +680,18 @@ header .neonlogo .acch1 {
   align-items: center;
   z-index: 3;
 }
-#neonlogobox #menuFixed #menuneonlogo {
+#neonlogobox #menuFixed #menuneonlogoBox {
   width: 100%;
+  background-color: black;
+  z-index: 3;
+  margin: auto;
   display: flex;
   justify-content: center;
+}
+#neonlogobox #menuFixed #menuneonlogoBox #menuneonlogo {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
   transition-duration: 300ms;
   padding: 10px 0px 10px 0px;
@@ -691,41 +699,46 @@ header .neonlogo .acch1 {
   z-index: 2;
   background-color: black;
 }
-#neonlogobox #menuFixed #menuneonlogo a {
+#neonlogobox #menuFixed #menuneonlogoBox #menuneonlogo a {
   color: rgb(0, 163, 220);
-  margin: 100px;
 }
-#neonlogobox #menuFixed #menuneonlogo a :hover {
+#neonlogobox #menuFixed #menuneonlogoBox #menuneonlogo a :hover {
   -webkit-animation: menu 500ms;
           animation: menu 500ms;
   color: rgb(225, 185, 75);
 }
-#neonlogobox #menuFixed #btn {
-  background-color: transparent;
+#neonlogobox #menuFixed #menuneonlogoBox #menuneonlogo #interactBtn {
+  display: flex;
+  justify-content: center;
+  width: 80px;
+}
+#neonlogobox #menuFixed #menuneonlogoBox #menuneonlogo #interactBtn #btn {
+  background-color: black;
   color: rgb(0, 163, 220);
   border: none;
   font-size: 25px;
   z-index: 2;
-  background-color: black;
   -webkit-animation: btnMenuOpen 500ms;
           animation: btnMenuOpen 500ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
-#neonlogobox #menuFixed #btn :hover {
+#neonlogobox #menuFixed #menuneonlogoBox #menuneonlogo #interactBtn #btn :hover {
   -webkit-animation: menu 500ms;
           animation: menu 500ms;
   color: rgb(225, 185, 75);
 }
-#neonlogobox #menuFixed #btnClose {
-  background-color: transparent;
+#neonlogobox #menuFixed #menuneonlogoBox #menuneonlogo #interactBtn #btnClose {
+  background-color: black;
   color: rgb(0, 163, 220);
   border: none;
   font-size: 25px;
-  margin-left: -18px;
+  margin-left: -17.5px;
   z-index: 1;
   -webkit-animation: btnMenuOpen 500ms;
           animation: btnMenuOpen 500ms;
 }
-#neonlogobox #menuFixed #btnClose :hover {
+#neonlogobox #menuFixed #menuneonlogoBox #menuneonlogo #interactBtn #btnClose :hover {
   -webkit-animation: menu 500ms;
           animation: menu 500ms;
   color: rgb(225, 185, 75);
@@ -830,8 +843,7 @@ header .neonlogo .acch1 {
     z-index: 1;
   }
   100% {
-    z-index: 1;
-    opacity: 0;
+    z-index: 2;
   }
 }
 @keyframes btnMenuOpen {
@@ -843,11 +855,10 @@ header .neonlogo .acch1 {
     z-index: 1;
   }
   100% {
-    z-index: 1;
-    opacity: 0;
+    z-index: 2;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   header {
     width: 100%;
     background-color: black;
@@ -881,44 +892,13 @@ header .neonlogo .acch1 {
     margin: 0px;
     transition-duration: 300ms;
     z-index: 2;
-    background-color: black;
+    background-color: red;
   }
   header #neonlogobox #menuFixed #menuneonlogo a {
     color: rgb(0, 163, 220);
-    margin: 30px;
     background-color: black;
   }
   header #neonlogobox #menuFixed #menuneonlogo a :hover {
-    -webkit-animation: menu 500ms;
-            animation: menu 500ms;
-    color: rgb(225, 185, 75);
-  }
-  header #neonlogobox #menuFixed #btn {
-    background-color: transparent;
-    color: rgb(0, 163, 220);
-    border: none;
-    font-size: 25px;
-    z-index: 2;
-    background-color: black;
-    -webkit-animation: btnMenuOpen 500ms;
-            animation: btnMenuOpen 500ms;
-  }
-  header #neonlogobox #menuFixed #btn :hover {
-    -webkit-animation: menu 500ms;
-            animation: menu 500ms;
-    color: rgb(225, 185, 75);
-  }
-  header #neonlogobox #menuFixed #btnClose {
-    background-color: transparent;
-    color: rgb(0, 163, 220);
-    border: none;
-    font-size: 25px;
-    margin-left: -18px;
-    z-index: 1;
-    -webkit-animation: btnMenuOpen 500ms;
-            animation: btnMenuOpen 500ms;
-  }
-  header #neonlogobox #menuFixed #btnClose :hover {
     -webkit-animation: menu 500ms;
             animation: menu 500ms;
     color: rgb(225, 185, 75);
@@ -927,118 +907,6 @@ header .neonlogo .acch1 {
     color: rgb(0, 163, 220);
     font-size: 25px;
     z-index: 2;
-  }
-  header #neonlogobox #menuFixed #bisMenu {
-    width: 100%;
-    max-width: 1200px;
-    height: 50px;
-    margin: auto;
-    margin-top: -50px;
-    padding: 0px;
-    background-color: black;
-    font-weight: 700;
-    font-size: 17px;
-    z-index: 1;
-  }
-  header #neonlogobox #menuFixed #bisMenu ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    margin: 0px;
-    text-align: center;
-  }
-  header #neonlogobox #menuFixed #bisMenu li {
-    list-style-type: none;
-    margin: auto;
-    padding: 0px 0px 0px 0px;
-    margin-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    min-width: 50%;
-  }
-  header #neonlogobox #menuFixed #bisMenu li a {
-    font-family: "montserrat";
-    text-decoration: none;
-    margin: auto;
-    color: rgb(154, 154, 154);
-    width: 100%;
-    height: 100%;
-  }
-  header #neonlogobox #menuFixed #bisMenu li a:hover {
-    color: rgb(225, 185, 75);
-    text-shadow: 1px 1px 3px grey;
-    -webkit-animation: menu 500ms;
-            animation: menu 500ms;
-    -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
-  }
-  header #neonlogobox #menuFixed #bisMenu i {
-    font-size: 25px;
-    margin: 15px;
-    color: rgb(0, 163, 220);
-    -webkit-animation: menu 500ms;
-            animation: menu 500ms;
-  }
-  @-webkit-keyframes bisMenuOpen {
-    0% {
-      margin-top: -50px;
-    }
-    100% {
-      margin-top: 0px;
-    }
-  }
-  @keyframes bisMenuOpen {
-    0% {
-      margin-top: -50px;
-    }
-    100% {
-      margin-top: 0px;
-    }
-  }
-  @-webkit-keyframes bisMenuClose {
-    0% {
-      margin-top: 0px;
-    }
-    100% {
-      margin-top: -50px;
-    }
-  }
-  @keyframes bisMenuClose {
-    0% {
-      margin-top: 0px;
-    }
-    100% {
-      margin-top: -50px;
-    }
-  }
-  @-webkit-keyframes btnMenuOpen {
-    0% {
-      font-size: 25px;
-    }
-    90% {
-      font-size: 25px;
-      z-index: 1;
-    }
-    100% {
-      z-index: 1;
-      opacity: 0;
-    }
-  }
-  @keyframes btnMenuOpen {
-    0% {
-      font-size: 25px;
-    }
-    90% {
-      font-size: 25px;
-      z-index: 1;
-    }
-    100% {
-      z-index: 1;
-      opacity: 0;
-    }
   }
 }
 .lastProdBox {
@@ -1204,19 +1072,19 @@ header .neonlogo .acch1 {
 }
 .presentation .lastReal .contentPart {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  margin-bottom: 100px;
+  width: 400px;
 }
 .presentation .lastReal .contentPart .lastprodMini {
   width: 25%;
   padding: 40px;
-  -webkit-animation: lastProd 1000ms;
-          animation: lastProd 1000ms;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  margin: 70px;
+  -webkit-animation: lastProd 8000ms linear;
+          animation: lastProd 8000ms linear;
+  -webkit-animation-iteration-count: 4;
+          animation-iteration-count: 4;
 }
 .presentation .lastReal .contentPart .lastprodMini img {
   width: 250px;
@@ -1225,21 +1093,19 @@ header .neonlogo .acch1 {
 
 @-webkit-keyframes lastProd {
   0% {
-    translate: -400%;
-    opacity: 0;
+    translate: -1100%;
   }
   100% {
-    translate: 5%;
+    translate: 1100%;
   }
 }
 
 @keyframes lastProd {
   0% {
-    translate: -400%;
-    opacity: 0;
+    translate: -1100%;
   }
   100% {
-    translate: 5%;
+    translate: 1100%;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1395,16 +1261,18 @@ header .neonlogo .acch1 {
   }
   .presentation .lastReal .contentPart {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 400px;
   }
   .presentation .lastReal .contentPart .lastprodMini {
     width: 15%;
     padding: 30px;
-    -webkit-animation: lastProd 1000ms;
-            animation: lastProd 1000ms;
+    -webkit-animation: lastProd 8000ms;
+            animation: lastProd 8000ms;
+    -webkit-animation-iteration-count: 10;
+            animation-iteration-count: 10;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     z-index: 10;
@@ -1419,20 +1287,26 @@ header .neonlogo .acch1 {
   }
   @-webkit-keyframes lastProd {
     0% {
-      translate: -400%;
+      translate: -350%;
       opacity: 0;
     }
+    50% {
+      translate: 300%;
+    }
     100% {
-      translate: -15%;
+      translate: -350%;
     }
   }
   @keyframes lastProd {
     0% {
-      translate: -400%;
+      translate: -350%;
       opacity: 0;
     }
+    50% {
+      translate: 300%;
+    }
     100% {
-      translate: -15%;
+      translate: -350%;
     }
   }
 }
