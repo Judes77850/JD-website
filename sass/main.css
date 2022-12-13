@@ -671,6 +671,7 @@ header .neonlogo .acch1 {
   align-items: center;
   background-color: black;
   margin-top: 0px;
+  padding: 0px;
 }
 #neonlogobox #menuFixed {
   display: flex;
@@ -707,12 +708,7 @@ header .neonlogo .acch1 {
           animation: menu 500ms;
   color: rgb(225, 185, 75);
 }
-#neonlogobox #menuFixed #menuneonlogoBox #menuneonlogo #interactBtn {
-  display: flex;
-  justify-content: center;
-  width: 80px;
-}
-#neonlogobox #menuFixed #menuneonlogoBox #menuneonlogo #interactBtn #btn {
+#neonlogobox #menuFixed #menuneonlogoBox #menuneonlogo #btn {
   background-color: black;
   color: rgb(0, 163, 220);
   border: none;
@@ -723,80 +719,66 @@ header .neonlogo .acch1 {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
-#neonlogobox #menuFixed #menuneonlogoBox #menuneonlogo #interactBtn #btn :hover {
+#neonlogobox #menuFixed #menuneonlogoBox #menuneonlogo #btn :hover {
   -webkit-animation: menu 500ms;
           animation: menu 500ms;
   color: rgb(225, 185, 75);
 }
-#neonlogobox #menuFixed #menuneonlogoBox #menuneonlogo #interactBtn #btnClose {
-  background-color: black;
-  color: rgb(0, 163, 220);
-  border: none;
-  font-size: 25px;
-  margin-left: -17.5px;
-  z-index: 1;
-  -webkit-animation: btnMenuOpen 500ms;
-          animation: btnMenuOpen 500ms;
-}
-#neonlogobox #menuFixed #menuneonlogoBox #menuneonlogo #interactBtn #btnClose :hover {
-  -webkit-animation: menu 500ms;
-          animation: menu 500ms;
-  color: rgb(225, 185, 75);
-}
-#neonlogobox #menuFixed .menulogo {
+#neonlogobox .menulogo {
   color: rgb(0, 163, 220);
   font-size: 25px;
   z-index: 2;
 }
-#neonlogobox #menuFixed #bisMenu {
+#neonlogobox #bisMenu {
   width: 100%;
   max-width: 1200px;
   height: 50px;
   margin: auto;
   margin-top: -50px;
-  padding: 0px;
+  padding: 0px 0px 0px 0px;
   background-color: black;
-  font-weight: 700;
   font-size: 20px;
   z-index: 1;
 }
-#neonlogobox #menuFixed #bisMenu ul {
+#neonlogobox #bisMenu ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0px;
-  margin: 0px;
+  padding: 0px 0px 0px 0px;
+  margin-top: 5px;
   text-align: center;
 }
-#neonlogobox #menuFixed #bisMenu li {
+#neonlogobox #bisMenu li {
+  width: 100%;
   list-style-type: none;
   margin: auto;
   padding: 0px 0px 0px 0px;
-  margin-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
 }
-#neonlogobox #menuFixed #bisMenu li a {
+#neonlogobox #bisMenu li a {
   font-family: "montserrat";
   text-decoration: none;
   margin: auto;
   color: rgb(154, 154, 154);
   width: 100%;
-  height: auto;
+  height: 100%;
+  padding-top: 5px;
 }
-#neonlogobox #menuFixed #bisMenu li a:hover {
-  color: rgb(225, 185, 75);
-  text-shadow: 1px 1px 3px grey;
+#neonlogobox #bisMenu li a:hover {
   -webkit-animation: menu 500ms;
           animation: menu 500ms;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
 }
-#neonlogobox #menuFixed #bisMenu i {
-  font-size: 25px;
-  margin: 15px;
+#neonlogobox #bisMenu #btnClose {
+  margin: auto;
+}
+#neonlogobox #bisMenu #btnClose i {
   color: rgb(0, 163, 220);
+  font-size: 25px;
+  margin-right: -3px;
+  -webkit-animation: btnMenuOpen 500ms;
+          animation: btnMenuOpen 500ms;
+}
+#neonlogobox #bisMenu #btnClose :hover {
   -webkit-animation: menu 500ms;
           animation: menu 500ms;
 }
@@ -834,30 +816,6 @@ header .neonlogo .acch1 {
     margin-top: -50px;
   }
 }
-@-webkit-keyframes btnMenuOpen {
-  0% {
-    font-size: 25px;
-  }
-  90% {
-    font-size: 25px;
-    z-index: 1;
-  }
-  100% {
-    z-index: 2;
-  }
-}
-@keyframes btnMenuOpen {
-  0% {
-    font-size: 25px;
-  }
-  90% {
-    font-size: 25px;
-    z-index: 1;
-  }
-  100% {
-    z-index: 2;
-  }
-}
 @media only screen and (max-width: 768px) {
   header {
     width: 100%;
@@ -892,105 +850,6 @@ header .neonlogo .acch1 {
     margin: 0px;
     transition-duration: 300ms;
     z-index: 2;
-    background-color: red;
-  }
-  header #neonlogobox #menuFixed #menuneonlogo a {
-    color: rgb(0, 163, 220);
-    background-color: black;
-  }
-  header #neonlogobox #menuFixed #menuneonlogo a :hover {
-    -webkit-animation: menu 500ms;
-            animation: menu 500ms;
-    color: rgb(225, 185, 75);
-  }
-  header #neonlogobox #menuFixed #btn {
-    background-color: transparent;
-    color: rgb(0, 163, 220);
-    border: none;
-    font-size: 25px;
-    z-index: 2;
-    background-color: black;
-    -webkit-animation: btnMenuOpen 500ms;
-            animation: btnMenuOpen 500ms;
-  }
-  header #neonlogobox #menuFixed #btn :hover {
-    -webkit-animation: menu 500ms;
-            animation: menu 500ms;
-    color: rgb(225, 185, 75);
-  }
-  header #neonlogobox #menuFixed #btnClose {
-    background-color: transparent;
-    color: rgb(0, 163, 220);
-    border: none;
-    font-size: 25px;
-    margin-left: -18px;
-    z-index: 1;
-    -webkit-animation: btnMenuOpen 500ms;
-            animation: btnMenuOpen 500ms;
-  }
-  header #neonlogobox #menuFixed #btnClose :hover {
-    -webkit-animation: menu 500ms;
-            animation: menu 500ms;
-    color: rgb(225, 185, 75);
-  }
-  header #neonlogobox #menuFixed .menulogo {
-    color: rgb(0, 163, 220);
-    font-size: 25px;
-    z-index: 2;
-  }
-  header #neonlogobox #menuFixed #bisMenu {
-    width: 100%;
-    max-width: 1200px;
-    height: 50px;
-    margin: auto;
-    margin-top: -50px;
-    padding: 0px;
-    background-color: black;
-    font-weight: 700;
-    font-size: 17px;
-    z-index: 1;
-  }
-  header #neonlogobox #menuFixed #bisMenu ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    margin: 0px;
-    text-align: center;
-  }
-  header #neonlogobox #menuFixed #bisMenu li {
-    list-style-type: none;
-    margin: auto;
-    padding: 0px 0px 0px 0px;
-    margin-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    min-width: 50%;
-  }
-  header #neonlogobox #menuFixed #bisMenu li a {
-    font-family: "montserrat";
-    text-decoration: none;
-    margin: auto;
-    color: rgb(154, 154, 154);
-    width: 100%;
-    height: 100%;
-  }
-  header #neonlogobox #menuFixed #bisMenu li a:hover {
-    color: rgb(225, 185, 75);
-    text-shadow: 1px 1px 3px grey;
-    -webkit-animation: menu 500ms;
-            animation: menu 500ms;
-    -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
-  }
-  header #neonlogobox #menuFixed #bisMenu i {
-    font-size: 25px;
-    margin: 15px;
-    color: rgb(0, 163, 220);
-    -webkit-animation: menu 500ms;
-            animation: menu 500ms;
   }
 }
 .lastProdBox {
