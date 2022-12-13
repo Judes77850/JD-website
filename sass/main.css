@@ -851,6 +851,7 @@ header .neonlogo .acch1 {
   header {
     width: 100%;
     background-color: black;
+    margin: 0px 0px 0px 0px;
   }
   header #neonlogobox {
     width: 100%;
@@ -860,7 +861,7 @@ header .neonlogo .acch1 {
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    margin: 0px;
+    margin: 0px 0px 0px 0px;
   }
   header #neonlogobox .neonlogo {
     width: 90%;
@@ -876,7 +877,7 @@ header .neonlogo .acch1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 10px 0px 10px 0px;
     margin: 0px;
     transition-duration: 300ms;
     z-index: 2;
@@ -1116,6 +1117,9 @@ header .neonlogo .acch1 {
   align-items: center;
   background-color: rgb(14, 14, 14);
   font-family: "montserrat";
+}
+.lastProdBox .contentPart .lastprod .textpart .hiddenP {
+  display: none;
 }
 .lastProdBox .contentPart .lastprod .textpart .moreOpt {
   width: 100%;

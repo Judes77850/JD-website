@@ -57,3 +57,8 @@ document.getElementById("btnClose").addEventListener("click", function () {
   btnClose.style.opacity = "0";
   btnClose.style.color = "black";
 });
+
+// document.querySelector("fa-plus").addEventListener("click", function () {
+//   let info = document.querySelector("hiddenP");
+//   info.style.backgroundColor = "pink";
+// });

@@ -74,6 +74,9 @@
                 align-items: center;
                 background-color: rgb(14, 14, 14);
                 font-family: 'montserrat';
+                .hiddenP{
+                    display: none;
+                }
                 .moreOpt{
                     width: 100%;
                     display: flex;

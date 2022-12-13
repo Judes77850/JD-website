@@ -410,6 +410,7 @@ header {
 header{
     width: 100%;
     background-color: black;
+    margin: 0px 0px 0px 0px;
     #neonlogobox{
         width: 100%;
         margin: auto;
@@ -418,7 +419,7 @@ header{
         justify-content: space-between;
         align-items: center;
         background-color: black;
-        margin: 0px;
+        margin: 0px 0px 0px 0px;
         .neonlogo{
             width: 90%;
             .acch1{
@@ -432,7 +433,7 @@ header{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                padding: 10px;
+                padding: 10px 0px 10px 0px;
                 margin: 0px;
                 transition-duration: 300ms;
                 z-index: 2;
