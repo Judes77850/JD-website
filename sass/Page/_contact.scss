@@ -12,22 +12,23 @@
     margin-top: 50px;
     margin-bottom: 100px;
     input{
-        margin: 10px;
+        margin-bottom: 20px;
         border-radius: 8px;
         height: 25px;
         text-align: left;
-        border-color: none;
+        border-color: rgb(202, 202, 202);
     }
 
     label{
-        color: $color-6;
+        color: $color-4;
         font-family: "montserrat";
-        margin-top: 30px;
+        margin-top: 0px;
+        text-align: left;
     }
 
     textarea{
         height: 70px;
-        margin: 20px;
+        margin: 0px;
         border-radius: 10px;
         text-align: left;
         border-color: $color-3;
@@ -42,7 +43,7 @@
         height: 30px;
         width: 140px;
         margin: auto;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
         margin-top: 40px;
         cursor: pointer;
     }
