@@ -35,6 +35,8 @@
             height: 400px;
             transition-duration: 200ms;
             opacity: 0;
+            animation: lastprod 1000ms;
+            animation-fill-mode: forwards;
             display: flex;
             flex-direction: column-reverse;
             justify-content: flex-start;
@@ -88,48 +90,36 @@
                         padding: 5px;
                         border-radius: 3px;
                         margin-bottom: -20px;
-                        margin-right: 0px;
+                        margin-right: -20px;
                     }
                     .fa-plus{
                         color: white;
                         background-color: $color-2;
                         padding: 10px;
                         border-radius: 3px;
-                        margin-left: -25px;
+                        margin-left: -20px;
                     }
                 }
                 
             }
         }
         .lastprod1{
-            animation: lastprod 1000ms;
             animation-delay: 600ms;
-            animation-fill-mode: forwards;
         }
         .lastprod2{
-            animation: lastprod 1000ms;
             animation-delay: 800ms;
-            animation-fill-mode: forwards;
         }
         .lastprod3{
-            animation: lastprod 1000ms;
             animation-delay: 1000ms;
-            animation-fill-mode: forwards;
         }
         .lastprod4{
-            animation: lastprod 1000ms;
             animation-delay: 1200ms;
-            animation-fill-mode: forwards;
         }
         .lastprod5{
-            animation: lastprod 1000ms;
             animation-delay: 1400ms;
-            animation-fill-mode: forwards;
         }
         .lastprod6{
-            animation: lastprod 1000ms;
             animation-delay: 1600ms;
-            animation-fill-mode: forwards;
         }
         @keyframes lastprod{
             0%{
@@ -224,7 +214,8 @@
                 min-width: 300px;
                 height: 250px;
                 opacity: 0;
-                transition-duration: 500ms;
+                animation: lastprod 1000ms;
+                animation-fill-mode: forwards;
                 display: flex;
                 flex-direction: column-reverse;
                 justify-content: flex-start;
@@ -258,37 +249,49 @@
                     background-color: rgb(14, 14, 14);
                     font-family: 'montserrat';
                     font-size: 14px;
+                    .hiddenP{
+                        display: none;
+                    }
+                    .moreOpt{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        a{
+                            color: $color-5;
+                            text-decoration: none;
+                            background-color: $color-4;
+                            padding: 5px;
+                            border-radius: 3px;
+                            margin-bottom: -10px;
+                            margin-right: -10px;
+                        }
+                        .fa-plus{
+                            color: white;
+                            background-color: $color-2;
+                            padding: 10px;
+                            border-radius: 3px;
+                            margin-left: -10px;
+                        }
+                    }
                 }
             }
             .lastprod1{
-                animation: lastprod 1000ms;
                 animation-delay: 600ms;
-                animation-fill-mode: forwards;
             }
             .lastprod2{
-                animation: lastprod 1000ms;
-                animation-delay: 700ms;
-                animation-fill-mode: forwards;
+                animation-delay: 800ms;
             }
             .lastprod3{
-                animation: lastprod 1000ms;
-                animation-delay: 800ms;
-                animation-fill-mode: forwards;
+                animation-delay: 1000ms;
             }
             .lastprod4{
-                animation: lastprod 1000ms;
-                animation-delay: 900ms;
-                animation-fill-mode: forwards;
+                animation-delay: 1200ms;
             }
             .lastprod5{
-                animation: lastprod 1000ms;
-                animation-delay: 1000ms;
-                animation-fill-mode: forwards;
+                animation-delay: 1400ms;
             }
             .lastprod6{
-                animation: lastprod 1000ms;
-                animation-delay: 1100ms;
-                animation-fill-mode: forwards;
+                animation-delay: 1600ms;
             }
             @keyframes lastprod{
                 0%{

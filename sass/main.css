@@ -1078,6 +1078,10 @@ header .neonlogo .acch1 {
   height: 400px;
   transition-duration: 200ms;
   opacity: 0;
+  -webkit-animation: lastprod 1000ms;
+          animation: lastprod 1000ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   display: flex;
   flex-direction: column-reverse;
   justify-content: flex-start;
@@ -1133,62 +1137,38 @@ header .neonlogo .acch1 {
   padding: 5px;
   border-radius: 3px;
   margin-bottom: -20px;
-  margin-right: 0px;
+  margin-right: -20px;
 }
 .lastProdBox .contentPart .lastprod .textpart .moreOpt .fa-plus {
   color: white;
   background-color: rgb(0, 163, 220);
   padding: 10px;
   border-radius: 3px;
-  margin-left: -25px;
+  margin-left: -20px;
 }
 .lastProdBox .contentPart .lastprod1 {
-  -webkit-animation: lastprod 1000ms;
-          animation: lastprod 1000ms;
   -webkit-animation-delay: 600ms;
           animation-delay: 600ms;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 .lastProdBox .contentPart .lastprod2 {
-  -webkit-animation: lastprod 1000ms;
-          animation: lastprod 1000ms;
   -webkit-animation-delay: 800ms;
           animation-delay: 800ms;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 .lastProdBox .contentPart .lastprod3 {
-  -webkit-animation: lastprod 1000ms;
-          animation: lastprod 1000ms;
   -webkit-animation-delay: 1000ms;
           animation-delay: 1000ms;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 .lastProdBox .contentPart .lastprod4 {
-  -webkit-animation: lastprod 1000ms;
-          animation: lastprod 1000ms;
   -webkit-animation-delay: 1200ms;
           animation-delay: 1200ms;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 .lastProdBox .contentPart .lastprod5 {
-  -webkit-animation: lastprod 1000ms;
-          animation: lastprod 1000ms;
   -webkit-animation-delay: 1400ms;
           animation-delay: 1400ms;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 .lastProdBox .contentPart .lastprod6 {
-  -webkit-animation: lastprod 1000ms;
-          animation: lastprod 1000ms;
   -webkit-animation-delay: 1600ms;
           animation-delay: 1600ms;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 @-webkit-keyframes lastprod {
   0% {
@@ -1299,7 +1279,10 @@ header .neonlogo .acch1 {
     min-width: 300px;
     height: 250px;
     opacity: 0;
-    transition-duration: 500ms;
+    -webkit-animation: lastprod 1000ms;
+            animation: lastprod 1000ms;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-start;
@@ -1334,53 +1317,53 @@ header .neonlogo .acch1 {
     font-family: "montserrat";
     font-size: 14px;
   }
+  .lastProdBox .contentPart .lastprod .textpart .hiddenP {
+    display: none;
+  }
+  .lastProdBox .contentPart .lastprod .textpart .moreOpt {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .lastProdBox .contentPart .lastprod .textpart .moreOpt a {
+    color: rgb(245, 245, 245);
+    text-decoration: none;
+    background-color: rgb(225, 185, 75);
+    padding: 5px;
+    border-radius: 3px;
+    margin-bottom: -10px;
+    margin-right: -10px;
+  }
+  .lastProdBox .contentPart .lastprod .textpart .moreOpt .fa-plus {
+    color: white;
+    background-color: rgb(0, 163, 220);
+    padding: 10px;
+    border-radius: 3px;
+    margin-left: -10px;
+  }
   .lastProdBox .contentPart .lastprod1 {
-    -webkit-animation: lastprod 1000ms;
-            animation: lastprod 1000ms;
     -webkit-animation-delay: 600ms;
             animation-delay: 600ms;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
   }
   .lastProdBox .contentPart .lastprod2 {
-    -webkit-animation: lastprod 1000ms;
-            animation: lastprod 1000ms;
-    -webkit-animation-delay: 700ms;
-            animation-delay: 700ms;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-  }
-  .lastProdBox .contentPart .lastprod3 {
-    -webkit-animation: lastprod 1000ms;
-            animation: lastprod 1000ms;
     -webkit-animation-delay: 800ms;
             animation-delay: 800ms;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
   }
-  .lastProdBox .contentPart .lastprod4 {
-    -webkit-animation: lastprod 1000ms;
-            animation: lastprod 1000ms;
-    -webkit-animation-delay: 900ms;
-            animation-delay: 900ms;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-  }
-  .lastProdBox .contentPart .lastprod5 {
-    -webkit-animation: lastprod 1000ms;
-            animation: lastprod 1000ms;
+  .lastProdBox .contentPart .lastprod3 {
     -webkit-animation-delay: 1000ms;
             animation-delay: 1000ms;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+  }
+  .lastProdBox .contentPart .lastprod4 {
+    -webkit-animation-delay: 1200ms;
+            animation-delay: 1200ms;
+  }
+  .lastProdBox .contentPart .lastprod5 {
+    -webkit-animation-delay: 1400ms;
+            animation-delay: 1400ms;
   }
   .lastProdBox .contentPart .lastprod6 {
-    -webkit-animation: lastprod 1000ms;
-            animation: lastprod 1000ms;
-    -webkit-animation-delay: 1100ms;
-            animation-delay: 1100ms;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    -webkit-animation-delay: 1600ms;
+            animation-delay: 1600ms;
   }
   @-webkit-keyframes lastprod {
     0% {
@@ -1496,7 +1479,6 @@ footer #socialBox i {
     width: 100%;
     height: 120px;
     background-color: black;
-    border-radius: 3px;
     left: 0;
     bottom: 0;
     text-align: center;
@@ -1504,7 +1486,7 @@ footer #socialBox i {
   footer p {
     color: rgb(225, 185, 75);
     font-family: roboting;
-    font-size: 25px;
+    font-size: 20px;
     margin: 10px;
     padding-top: 10px;
   }
