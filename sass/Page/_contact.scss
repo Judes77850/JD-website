@@ -1,16 +1,18 @@
 @import "../Utils/variables";
 
-
+main{
+    min-height: 800px;
+    width: 100%;
+}
 
 #contact-form{
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 90%;
     max-width: 600px;
     margin: auto;
     margin-top: 50px;
-    margin-bottom: 100px;
     input{
         margin-bottom: 20px;
         border-radius: 8px;
