@@ -1008,27 +1008,6 @@ header .neonlogo .acch1 {
   text-align: left;
   font-family: "montserrat";
 }
-.presentation .lastReal .titlePart {
-  margin: 15px;
-  width: 300px;
-}
-.presentation .lastReal .titlePart h2 {
-  text-align: center;
-  font-family: "roboting";
-  font-size: 25px;
-  padding: 5px;
-  color: rgb(225, 185, 75);
-  background-color: black;
-  -webkit-animation: h1 1500ms;
-          animation: h1 1500ms;
-  -webkit-animation-iteration-count: 2;
-          animation-iteration-count: 2;
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
-  border: solid 3px rgb(0, 163, 220);
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px grey;
-}
 .presentation .lastReal .contentPart {
   display: flex;
   flex-direction: row;
@@ -1044,8 +1023,22 @@ header .neonlogo .acch1 {
           animation: lastProd 1000ms ease-in;
 }
 .presentation .lastReal .contentPart .lastprodMini img {
-  width: 300px;
+  width: 200px;
+  padding: 50px;
   transition-duration: 300ms;
+}
+
+.titlePart {
+  margin: 15px;
+  width: 350;
+}
+.titlePart h2 {
+  text-align: left;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  padding: 5px;
+  color: rgb(225, 185, 75);
+  margin-bottom: 0px;
 }
 
 @-webkit-keyframes lastProd {
@@ -1243,6 +1236,7 @@ header .neonlogo .acch1 {
   }
   .presentation .lastReal .contentPart .lastprodMini img {
     width: 100px;
+    padding: 0px;
     transition-duration: 300ms;
   }
   @-webkit-keyframes lastProd {
